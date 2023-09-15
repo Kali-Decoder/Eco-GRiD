@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -158,4 +162,22 @@
   line-height: 60px;
   text-align: start;
   white-space: nowrap;
+}
+
+
+.invoice-head td {
+  padding: 0 8px;
+}
+.container {
+  padding-top:30px;
+}
+.invoice-body{
+  background-color:transparent;
+}
+.invoice-thank{
+  margin-top: 60px;
+  padding: 5px;
+}
+address{
+  margin-top:15px;
 }
