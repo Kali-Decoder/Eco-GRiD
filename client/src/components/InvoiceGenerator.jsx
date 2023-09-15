@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import invoice from "../data/invoice.js";
 const InvoiceGenerator = () => {
   function addQrCodeToPdf(qrCodeDataUrl, pdf) {
     const qrImg = new Image();
@@ -70,7 +71,7 @@ const InvoiceGenerator = () => {
           </div>
         </div>
         <div class="text-left mt-10">
-          <p>Tailwind Inc.</p>
+          <p>Eco-Grid Inc.</p>
           <p class="text-gray-500 text-sm">sales@tailwindcss.com</p>
           <p class="text-gray-500 text-sm mt-1">+41-442341232</p>
           <p class="text-gray-500 text-sm mt-1">VAT: 8657671212</p>
