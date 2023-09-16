@@ -1,42 +1,42 @@
 import React from "react";
-
+import { TypeAnimation } from "react-type-animation";
 const LandingPage = () => {
   return (
     <>
-   
-      <section className="w-full px-8 text-gray-700 bg-white">
+      <section className="w-full px-8 text-gray-700 bg-black">
         <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
           <div className="relative flex flex-col md:flex-row">
             <a
               href="#_"
-              className="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+              className="flex items-center text-lg mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
-              <span className="mx-auto text-xl font-black leading-none text-gray-900 select-none">
-                AI<span className="text-indigo-600">.</span>
+              <span className="mx-auto  font-black leading-none text-white select-none">
+                Eco<span className="text-indigo-800">-</span>
+                <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
             <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200">
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Home
               </a>
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Features
               </a>
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Pricing
               </a>
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900"
+                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Blog
               </a>
@@ -46,34 +46,56 @@ const LandingPage = () => {
           <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
             <a
               href="#"
-              className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap transition duration-150 ease-in-out hover:text-gray-900"
-            >
-              Sign in
-            </a>
-            <a
-              href="#"
               className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
             >
-              Sign up
+              Let's Go See Future
             </a>
           </div>
         </div>
       </section>
 
-      <section className="px-2 py-32 bg-white md:px-0">
+      <section className="px-2 py-32 bg-black md:px-0">
         <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
           <div className="flex flex-wrap items-center sm:-mx-3">
             <div className="w-full md:w-1/2 md:px-3">
               <div className="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-                  <span className="block xl:inline">Useful Tools to</span>
-                  <span className="block text-indigo-600 xl:inline">
-                    Help You Build Faster.
-                  </span>
+                  <TypeAnimation
+                    sequence={[
+                      "Transforming",
+                      1000,
+                      "Transforming Grids !",
+                      2000,
+                      "Transforming Grids !",
+                      () => {
+                        console.log("Sequence completed");
+                      },
+                    ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={Infinity}
+                    className="block text-yellow-400"
+                  />
+
+                  <TypeAnimation
+                    sequence={[
+                      "Transforming",
+                      1000,
+                      "Transforming Lives !",
+                      2000,
+                      "Transforming Lives !",
+                      () => {
+                        console.log("Sequence completed");
+                      },
+                    ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={Infinity}
+                    className="block text-indigo-600"
+                  />
                 </h1>
-                <p className="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
-                  It's never been easier to build beautiful websites that convey
-                  your message and tell your story.
+                <p className="mx-auto text-base text-white sm:max-w-md lg:text-xl md:max-w-3xl">
+                The  <span className="font-bold text-blue-700">Eco-GRiD </span>platform enables efficient energy source management through its energy trading marketplace.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
                   <a
@@ -113,7 +135,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+      <section className="w-full bg-black pt-7 pb-7 md:pt-20 md:pb-24">
         <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
           <div className="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
             <img
@@ -193,7 +215,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20  bg-black">
         <div className="container items-center max-w-6xl  px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
           <div className="flex flex-wrap items-center -mx-3">
             <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
@@ -277,7 +299,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center py-20 bg-white min-w-screen">
+      <section className="flex items-center justify-center py-20 bg-black min-w-screen">
         <div className="px-16 bg-white">
           <div className="container flex flex-col items-start mx-auto lg:items-center">
             <p className="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center">
@@ -358,7 +380,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="box-border py-8 leading-7 text-gray-900 bg-white border-0 border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24">
+      <section className="box-border py-8 leading-7 text-gray-900 bg-black border-0 border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24">
         <div className="box-border max-w-6xl px-4 pb-12 mx-auto border-solid sm:px-6 md:px-6 lg:px-4">
           <div className="flex flex-col items-center leading-7 text-center text-gray-900">
             <h2 className="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-5xl">
@@ -431,7 +453,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-black">
         <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav className="flex flex-wrap justify-center -mx-5 -my-2">
             <div className="px-5 py-2">

@@ -17,8 +17,8 @@ import LandingPage2 from "./components/LandingPage2";
 const App = () => {
   return (
     <>
-      {/* <LandingPage /> */}
-      <LandingPage2/>
+      <LandingPage />
+
       {/* <MergePDFs/> */}
       {/* <InvoiceGenerator/> */}
 
