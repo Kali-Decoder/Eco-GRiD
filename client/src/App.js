@@ -6,10 +6,8 @@ import { TbMailShare } from "react-icons/tb";
 import { SlDocs } from "react-icons/sl";
 import { LuLogOut, LuActivity } from "react-icons/lu";
 import { PiHandCoinsDuotone } from "react-icons/pi";
-
-
-
-
+import LandingPage from "./components/LandingPage";
+import LandingPage2 from "./components/LandingPage2";
 
 // let navigation = document.querySelector(".navigation");
 // let toggle = document.querySelector(".toggle");
@@ -17,14 +15,14 @@ import { PiHandCoinsDuotone } from "react-icons/pi";
 //   navigation.classList.toggle("active");
 // };
 const App = () => {
- 
-
   return (
     <>
+      {/* <LandingPage /> */}
+      <LandingPage2/>
       {/* <MergePDFs/> */}
       {/* <InvoiceGenerator/> */}
-     
-            {/* <div className="container">
+
+      {/* <div className="container-drawer">
         <div className="navigation">
           <ul>
             <li>
