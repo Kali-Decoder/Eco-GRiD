@@ -1,13 +1,13 @@
 import React from 'react'
 
-const MarketPlace = () => {
+const Rewards = () => {
   return (
     <div className="flex flex-col justify-center">
         <h1 className="text-violet-500 font-extrabold text-3xl mt-4 text-center">
-          MarketPlace
+          Rewards
         </h1>
       </div>
   )
 }
 
-export default MarketPlace
+export default Rewards

@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import {FaSuperpowers} from "react-icons/fa";
-import {GiRollingEnergy} from "react-icons/gi";
+import { FaSuperpowers } from "react-icons/fa";
+import { GiRollingEnergy } from "react-icons/gi";
 const LandingPage = () => {
   return (
     <>
@@ -10,14 +10,19 @@ const LandingPage = () => {
           <div className="relative flex flex-col md:flex-row">
             <a
               href="/"
-              className="flex items-center text-lg mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+              className="flex mt-4 flex-col items-center mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
-              <span className="mx-auto inline-block font-black leading-none text-white select-none">
-               <GiRollingEnergy size={30} color="white"/> Eco<span className="text-indigo-800">-</span>
+              <GiRollingEnergy size={40} color="white" />
+              <span
+                className="mx-auto mt-1 text-white select-none"
+                style={{ fontSize: "25px" }}
+              >
+                Eco
+                <span className="text-indigo-800">-</span>
                 <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
-            <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200">
+            <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-gray-200">
               <a
                 href="#_"
                 className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
@@ -47,7 +52,7 @@ const LandingPage = () => {
 
           <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
             <a
-              href="#"
+              href="/go"
               className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
             >
               Let's Go, See Future
@@ -97,7 +102,9 @@ const LandingPage = () => {
                   />
                 </h1>
                 <p className="mx-auto text-base text-white sm:max-w-md lg:text-3xl md:max-w-3xl">
-                The  <span className="font-bold text-blue-700">Eco-GRiD </span>platform enables efficient energy source management through its energy trading marketplace.
+                  The <span className="font-bold text-blue-700">Eco-GRiD </span>
+                  platform enables efficient energy source management through
+                  its energy trading marketplace.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
                   <a
@@ -130,7 +137,7 @@ const LandingPage = () => {
             </div>
             <div className="w-full md:w-1/3 flex flex-end">
               <div className="w-full  h-auto overflow-hidden rounded-sm">
-                <FaSuperpowers color="#00C5CD"  size={400} />
+                <FaSuperpowers color="#00C5CD" size={400} />
               </div>
             </div>
           </div>
@@ -152,7 +159,9 @@ const LandingPage = () => {
               Boost Productivity
             </h2>
             <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
-            Achieving complete decentralization, P2P trading, transparency, and optimal energy use fosters sustainability and self-reliance in our energy system.
+              Achieving complete decentralization, P2P trading, transparency,
+              and optimal energy use fosters sustainability and self-reliance in
+              our energy system.
             </p>
             <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
               <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
@@ -165,13 +174,15 @@ const LandingPage = () => {
                 <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Peer-to-Peer Energy Trading: Direct energy exchange between Sub Grid.
+                Peer-to-Peer Energy Trading: Direct energy exchange between Sub
+                Grid.
               </li>
               <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
                 <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Transparency and Accountability: Open, traceable energy transactions.
+                Transparency and Accountability: Open, traceable energy
+                transactions.
               </li>
               <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
                 <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
