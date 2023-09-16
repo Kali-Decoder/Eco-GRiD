@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import {SlEnergy} from "react-icons/sl";
+import {FaSuperpowers} from "react-icons/fa";
 import {GiRollingEnergy} from "react-icons/gi";
 const LandingPage = () => {
   return (
@@ -13,7 +13,7 @@ const LandingPage = () => {
               className="flex items-center text-lg mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
               <span className="mx-auto inline-block font-black leading-none text-white select-none">
-               <GiRollingEnergy size={30} color="white"/> Eco<span className="text-indigo-800 mt-1">-</span>
+               <GiRollingEnergy size={30} color="white"/> Eco<span className="text-indigo-800">-</span>
                 <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
@@ -130,7 +130,7 @@ const LandingPage = () => {
             </div>
             <div className="w-full md:w-1/3 flex flex-end">
               <div className="w-full  h-auto overflow-hidden rounded-sm">
-                <SlEnergy color="yellow" size={400} />
+                <FaSuperpowers color="#00C5CD"  size={400} />
               </div>
             </div>
           </div>
