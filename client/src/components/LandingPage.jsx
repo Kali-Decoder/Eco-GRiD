@@ -317,7 +317,57 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
+      <div className="section2 mx-auto bg-black flex justify-center items-center">
+        <div className="features flex flex-wrap">
+          <div className="tile access">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-access-anywhere.svg"
+              alt="access icon"
+            />
+            <h3 className="mt-4 font-bold text-yellow-300 uppercase">Access your files, anywhere</h3>
+            <p className="mt-4">
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
+          <div className="tile security">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-security.svg"
+              alt="security icon"
+            />
+             <h3 className="mt-4 font-bold uppercase text-yellow-300">Security you can trust</h3>
+                  
+            <p className="mt-4">
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </div>
+          <div className="tile real-time">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-collaboration.svg"
+              alt="clock icon"
+            />
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">Real-time collaboration</h3>
+            <p className="mt-4">
+              Securely share files and folders with friends, family, and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+          <div className="tile storage">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-any-file.svg"
+              alt="storage icon"
+            />
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">Store any type of file</h3>
+            <p className="mt-4">
+              Whether you're sharing holidays, photos, or work documents, Fylo
+              as you covered, allowing for all file types to be securely stored
+              and shared.
+            </p>
+          </div>
+        </div>
+      </div>
       <section className="flex items-center justify-center py-20 bg-black min-w-screen">
         <div className="px-16 bg-black">
           <div className="container flex flex-col items-start mx-auto lg:items-center">

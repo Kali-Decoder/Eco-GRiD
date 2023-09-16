@@ -6,7 +6,7 @@ import { FaShopify } from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 import Rewards from "./Rewards";
 import History from "./History";
-import MarketPlace from "./MarketPlace";
+
 const UserDashboard = () => {
   const [currentTab, setCurrentTab] = useState(0);
 
@@ -117,25 +117,25 @@ const UserDashboard = () => {
               </div>
             </li>
             <li>
-              <div
-                onClick={() => setCurrentTab(3)}
+              <Link
+                to="/marketplace"
                 className="flex items-center cursor-pointer p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-500 group"
               >
                 <FaShopify size={25} color="white" />
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   MarketPlace
                 </span>
-              </div>
+              </Link>
             </li>
           </ul>
         </div>
       </aside>
 
       <div className="p-4 sm:ml-64 bg-black h-screen">
-        <div className="p-4 border-2 rounded-lg">
+        <div className="p-4 rounded-lg">
           {currentTab===1 && <Rewards />}
           {currentTab===2 && <History />}
-          {currentTab===3 && <MarketPlace />}
+
         </div>
       </div>
     </>

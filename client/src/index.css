@@ -7,7 +7,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-image:linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+  background: black;
   font-size:14px;
 
 }
@@ -118,7 +118,7 @@ h2{
 
 .section2{
   width:100%;
-  background-color:hsl(217, 28%, 13%);
+  background-color:black !important;
   padding-top:150px;
   
 }
@@ -400,6 +400,29 @@ margin:0;
 }
 
 
+.features{
+    display:inline-grid;
+    grid-template-columns: 425px 425px;
+    grid-column-gap: 120px;
+    grid-row-gap:60px;
+    grid-template-rows: 300px 300px;
+}
+
+.features img{
+    height:100px;
+}
+
+h3{
+    color:hsl(0, 0%, 100%);
+    font-size:1.5em;
+}
+
+p{
+    color:hsl(0, 0%, 100%);
+    font-size:1.1em;
+    line-height:1.5em;
+    font-weight:400;
+}
 
 /* 
 * {
