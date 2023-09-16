@@ -1,5 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import {SlEnergy} from "react-icons/sl";
+import {GiRollingEnergy} from "react-icons/gi";
 const LandingPage = () => {
   return (
     <>
@@ -7,11 +9,11 @@ const LandingPage = () => {
         <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
           <div className="relative flex flex-col md:flex-row">
             <a
-              href="#_"
-              className="flex items-center text-lg mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+              href="/"
+              className="flex items-center text-lg mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
-              <span className="mx-auto  font-black leading-none text-white select-none">
-                Eco<span className="text-indigo-800">-</span>
+              <span className="mx-auto inline-block font-black leading-none text-white select-none">
+               <GiRollingEnergy size={30} color="white"/> Eco<span className="text-indigo-800 mt-1">-</span>
                 <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
@@ -48,7 +50,7 @@ const LandingPage = () => {
               href="#"
               className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
             >
-              Let's Go See Future
+              Let's Go, See Future
             </a>
           </div>
         </div>
@@ -56,7 +58,7 @@ const LandingPage = () => {
 
       <section className="px-2 py-32 bg-black md:px-0">
         <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
-          <div className="flex flex-wrap items-center sm:-mx-3">
+          <div className="flex flex-wrap justify-between items-center sm:-mx-3">
             <div className="w-full md:w-1/2 md:px-3">
               <div className="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -66,7 +68,7 @@ const LandingPage = () => {
                       1000,
                       "Transforming Grids !",
                       2000,
-                      "Transforming Grids !",
+                      "Transforming",
                       () => {
                         console.log("Sequence completed");
                       },
@@ -83,7 +85,7 @@ const LandingPage = () => {
                       1000,
                       "Transforming Lives !",
                       2000,
-                      "Transforming Lives !",
+                      "Transforming",
                       () => {
                         console.log("Sequence completed");
                       },
@@ -94,7 +96,7 @@ const LandingPage = () => {
                     className="block text-indigo-600"
                   />
                 </h1>
-                <p className="mx-auto text-base text-white sm:max-w-md lg:text-xl md:max-w-3xl">
+                <p className="mx-auto text-base text-white sm:max-w-md lg:text-3xl md:max-w-3xl">
                 The  <span className="font-bold text-blue-700">Eco-GRiD </span>platform enables efficient energy source management through its energy trading marketplace.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
@@ -102,7 +104,7 @@ const LandingPage = () => {
                     href="#_"
                     className="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto"
                   >
-                    Try It Free
+                    Collect Energy
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5 ml-1"
@@ -117,18 +119,18 @@ const LandingPage = () => {
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                   </a>
-                  <a
+                  {/* <a
                     href="#_"
                     className="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
                   >
                     Learn More
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2">
-              <div className="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+            <div className="w-full md:w-1/3 flex flex-end">
+              <div className="w-full  h-auto overflow-hidden rounded-sm">
+                <SlEnergy color="yellow" size={400} />
               </div>
             </div>
           </div>
@@ -136,11 +138,12 @@ const LandingPage = () => {
       </section>
 
       <section className="w-full bg-black pt-7 pb-7 md:pt-20 md:pb-24">
-        <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+        <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-solid md:flex-row max-w-7xl lg:px-16">
           <div className="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
             <img
               src="https://cdn.devdojo.com/images/december2020/productivity.png"
               className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 "
+              alt="name"
             />
           </div>
 
@@ -149,35 +152,40 @@ const LandingPage = () => {
               Boost Productivity
             </h2>
             <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
-              Build an atmosphere that creates productivity in your organization
-              and your company culture.
+            Achieving complete decentralization, P2P trading, transparency, and optimal energy use fosters sustainability and self-reliance in our energy system.
             </p>
             <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
-              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Maximize productivity and growth
+                Complete Decentralization: Energy grid without central control.
               </li>
-              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Speed past your competition
+                Peer-to-Peer Energy Trading: Direct energy exchange between Sub Grid.
               </li>
-              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Learn the top techniques
+                Transparency and Accountability: Open, traceable energy transactions.
+              </li>
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Optimal energy use and Sustainable, self-reliant energy system.
               </li>
             </ul>
           </div>
         </div>
-        <div className="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+        <div className="box-border flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
           <div className="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-              Automated Tasks
+              Features Provides
             </h2>
             <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
               Save time and money with our revolutionary services. We are the
@@ -300,13 +308,13 @@ const LandingPage = () => {
       </section>
 
       <section className="flex items-center justify-center py-20 bg-black min-w-screen">
-        <div className="px-16 bg-white">
+        <div className="px-16 bg-black">
           <div className="container flex flex-col items-start mx-auto lg:items-center">
             <p className="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center">
               Don't just take our word for it
             </p>
 
-            <h2 className="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
+            <h2 className="relative flex mt-5 items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -319,21 +327,22 @@ const LandingPage = () => {
             </h2>
             <div className="block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
 
-            <div className="items-center justify-center w-full mt-12 mb-4 lg:flex">
+            <div className="items-center justify-center w-full mt-20 mb-4 lg:flex">
               <div className="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
                     <img
                       src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1700&amp;q=80"
                       className="object-cover w-full h-full"
+                      alt="name"
                     />
                   </div>
                   <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800">John Doe</h4>
-                    <p className="text-gray-600">CEO of Something</p>
+                    <h4 className="font-bold text-white">John Doe</h4>
+                    <p className="text-white">CEO of Something</p>
                   </div>
                 </div>
-                <blockquote className="mt-8 text-lg text-gray-500">
+                <blockquote className="mt-8 text-lg text-white">
                   "This is a no-brainer if you want to take your business to the
                   next level. If you are looking for the ultimate toolset, this
                   is it!"
@@ -348,11 +357,11 @@ const LandingPage = () => {
                     />
                   </div>
                   <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800">Jane Doe</h4>
-                    <p className="text-gray-600">CTO of Business</p>
+                    <h4 className="font-bold text-white">Jane Doe</h4>
+                    <p className="text-white">CTO of Business</p>
                   </div>
                 </div>
-                <blockquote className="mt-8 text-lg text-gray-500">
+                <blockquote className="mt-8 text-lg text-white">
                   "Thanks for creating this service. My life is so much easier.
                   Thanks for making such a great product."
                 </blockquote>
@@ -366,11 +375,11 @@ const LandingPage = () => {
                     />
                   </div>
                   <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800">John Smith</h4>
-                    <p className="text-gray-600">Creator of Stuff</p>
+                    <h4 className="font-bold text-white">John Smith</h4>
+                    <p className="text-white">Creator of Stuff</p>
                   </div>
                 </div>
-                <blockquote className="mt-8 text-lg text-gray-500">
+                <blockquote className="mt-8 text-lg text-white">
                   "Packed with awesome content and exactly what I was looking
                   for. I would highly recommend this to anyone."
                 </blockquote>
