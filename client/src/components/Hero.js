@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div id="hero" className="flex justify-center items-center flex-col">
       <h1 id="header-text-first"> ⚡️ </h1>
-      <h1 id="header-text-second"> Energy Marketplace</h1>
+      <h1 id="header-text-second"> Energy Trade Marketplace</h1>
       <h5 id="header-subtext">Craft, hunt and trade NFT's in the dark</h5>
 
       <div id="hero-buttons">

@@ -31,6 +31,7 @@ const NFTCard = ({ username, nftName, price, nftSrc, likeCount, gradient, onClic
 
   return (
     <Card
+    
       blurColor={colors[0]}
 
       child={<>

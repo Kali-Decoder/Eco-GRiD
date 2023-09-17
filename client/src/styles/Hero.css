@@ -10,7 +10,7 @@
   position: relative;
   background-size: cover;
   /* z-index: 1; */
-  margin-top: 13rem;
+  margin-top: 3rem;
 }
 
 #hero-background{
@@ -122,7 +122,7 @@ a {
   padding: 30px;
   font-size: 18px;
   color: #666c70;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /*#666C70*/
@@ -133,7 +133,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 button#explore {
@@ -229,7 +229,7 @@ button#create {
     padding: 30px;
     font-size: 15px;
     color: #666c70;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   #hero-buttons {

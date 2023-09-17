@@ -13,7 +13,7 @@ const Card = React.forwardRef(
     ref
   ) => (
     <div
-      className="card"
+      className="card "
       style={{
         width: `${width}`,
         height: `${height}`,

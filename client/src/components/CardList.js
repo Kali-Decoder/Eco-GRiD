@@ -20,9 +20,10 @@ const CardList = ({ list, type = "horizontal" }) => {
   return (
     <div
       id="card-list"
+      
       style={{ flexDirection: type == "horizontal" ? "row" : "column" }}
     >
-      <Carousel
+      {/* <Carousel
         ref={carouselRef}
         enableAutoPlay={true}
         autoPlaySpeed={4000}
@@ -34,7 +35,7 @@ const CardList = ({ list, type = "horizontal" }) => {
             carouselRef?.current?.goTo(0);
           }, 4000); // same time
         }}
-      >
+      > */}
         {list.map((item, index) => (
           <NFTCard
             nftSrc={item.src}
@@ -42,7 +43,7 @@ const CardList = ({ list, type = "horizontal" }) => {
             onClick={() => navigate("/detail", { state: { item: item } })}
           />
         ))}
-      </Carousel>
+      {/* </Carousel> */}
     </div>
   );
 };
