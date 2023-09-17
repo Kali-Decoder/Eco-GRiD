@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaSuperpowers } from "react-icons/fa";
 import { GiRollingEnergy } from "react-icons/gi";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 const LandingPage = () => {
   return (
     <>
@@ -107,7 +108,8 @@ const LandingPage = () => {
                   its energy trading marketplace.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
-                  <a
+                  <ConnectButton />
+                  {/* <a
                     href="#_"
                     className="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto"
                   >
@@ -125,7 +127,7 @@ const LandingPage = () => {
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
-                  </a>
+                  </a> */}
                   {/* <a
                     href="#_"
                     className="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
@@ -324,7 +326,9 @@ const LandingPage = () => {
               src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-access-anywhere.svg"
               alt="access icon"
             />
-            <h3 className="mt-4 font-bold text-yellow-300 uppercase">Access your files, anywhere</h3>
+            <h3 className="mt-4 font-bold text-yellow-300 uppercase">
+              Access your files, anywhere
+            </h3>
             <p className="mt-4">
               The ability to use a smartphone, tablet, or computer to access
               your account means your files follow you everywhere.
@@ -335,8 +339,10 @@ const LandingPage = () => {
               src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-security.svg"
               alt="security icon"
             />
-             <h3 className="mt-4 font-bold uppercase text-yellow-300">Security you can trust</h3>
-                  
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+              Security you can trust
+            </h3>
+
             <p className="mt-4">
               2-factor authentication and user-controlled encryption are just a
               couple of the security features we allow to help secure your
@@ -348,7 +354,9 @@ const LandingPage = () => {
               src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-collaboration.svg"
               alt="clock icon"
             />
-            <h3 className="mt-4 font-bold uppercase text-yellow-300">Real-time collaboration</h3>
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+              Real-time collaboration
+            </h3>
             <p className="mt-4">
               Securely share files and folders with friends, family, and
               colleagues for live collaboration. No email attachments required.
@@ -359,7 +367,9 @@ const LandingPage = () => {
               src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-any-file.svg"
               alt="storage icon"
             />
-            <h3 className="mt-4 font-bold uppercase text-yellow-300">Store any type of file</h3>
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+              Store any type of file
+            </h3>
             <p className="mt-4">
               Whether you're sharing holidays, photos, or work documents, Fylo
               as you covered, allowing for all file types to be securely stored
@@ -560,7 +570,7 @@ const LandingPage = () => {
               </svg>
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">Dribbble</span>
+              <span className="sr-only">Kali-Decoder</span>
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"

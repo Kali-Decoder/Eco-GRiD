@@ -2,8 +2,8 @@ import React, { Component, Fragment } from "react";
 import LandingPage from "./components/LandingPage";
 import UserDashboard from "./components/UserDashboard";
 import {Routes,Route} from "react-router-dom";
-import TransactionHistoryCard from "./components/TransactionHistoryCard";
 import MarketPlace from "./components/MarketPlace";
+// import Home from "./pages/Home";
 const App = () => {
   
   return (
@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/marketplace" exact element={<MarketPlace/>} />
 
       </Routes>
+      {/* <Home/> */}
       
     </>
   );
