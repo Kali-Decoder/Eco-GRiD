@@ -1,16 +1,74 @@
 {
-    "powerstations": [{
-        "id": "1",
-        "name": "Power Station 1",
-        "description": "Panipat Thermal Power Station I is located at Khukhrana Panipat in Haryana. The power plant is one of the coal based power plants of HPGCL",
-        "total_Substations": 10,
-        "connection_types": [11000, 6000],
-        "walletAddress": "0xabcdef1234",
-        "img_url": "",
-        "location": {
-            "lat": "12.4",
-            "lot": "13"
-        },
-        "capacity": 12000
-    }]
+  "powerstations": [
+    {
+      "id": "1",
+      "name": "Power Station 1",
+      "description": "Panipat Thermal Power Station I is located at Khukhrana Panipat in Haryana. The power plant is one of the coal based power plants of HPGCL",
+      "total_Substations": 10,
+      "connection_types": [11000, 6000],
+      "walletAddress": "0xabcdef1234",
+      "img_url": "",
+      "location": {
+        "lat": "12.4",
+        "lot": "13"
+      },
+      "capacity": 12000
+    },
+    {
+      "id": "2",
+      "name": "Solar Power Station A",
+      "description": "Solar Power Station A is located in a sunny region in California. It harnesses the power of the sun to generate electricity, providing clean and sustainable energy to the region.",
+      "total_Substations": 5,
+      "connection_types": ["11 kV AC", "33 kV AC"],
+      "walletAddress": "0x1234567890",
+      "img_url": "",
+      "location": {
+        "lat": "34.05",
+        "lot": "-118.24"
+      },
+      "capacity": 8000
+    },
+    {
+      "id": "3",
+      "name": "Wind Energy Farm B",
+      "description": "Wind Energy Farm B is situated on the windy plains of Texas. It features a collection of wind turbines that generate electricity from the power of the wind, contributing to a greener future.",
+      "total_Substations": 6,
+      "connection_types": ["6 kV AC", "15 kV AC"],
+      "walletAddress": "0x2345678901",
+      "img_url": "",
+      "location": {
+        "lat": "32.78",
+        "lot": "-99.92"
+      },
+      "capacity": 6000
+    },
+    {
+      "id": "4",
+      "name": "Hydroelectric Power Station C",
+      "description": "Hydroelectric Power Station C is nestled in the mountains of British Columbia, Canada. It harnesses the power of flowing water to generate clean and sustainable electricity.",
+      "total_Substations": 4,
+      "connection_types": ["13 kV AC", "22 kV AC"],
+      "walletAddress": "0x3456789012",
+      "img_url": "",
+      "location": {
+        "lat": "53.73",
+        "lot": "-122.64"
+      },
+      "capacity": 9500
+    },
+    {
+      "id": "5",
+      "name": "Geothermal Power Plant D",
+      "description": "Geothermal Power Plant D is located in the geologically active region of Iceland. It taps into the Earth's natural heat to produce environmentally friendly electricity.",
+      "total_Substations": 3,
+      "connection_types": ["10 kV AC", "20 kV AC"],
+      "walletAddress": "0x4567890123",
+      "img_url": "",
+      "location": {
+        "lat": "64.14",
+        "lot": "-21.94"
+      },
+      "capacity": 7200
+    }
+  ]
 }
