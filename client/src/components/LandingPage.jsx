@@ -70,11 +70,12 @@ const LandingPage = () => {
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
                   <TypeAnimation
                     sequence={[
-                      "Transforming",
-                      1000,
+                      "",
+                      10,
+                      "",
+                      20,
                       "Transforming Grids !",
-                      2000,
-                      "Transforming",
+                      3000,
                       () => {
                         console.log("Sequence completed");
                       },

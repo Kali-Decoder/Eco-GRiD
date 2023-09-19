@@ -20,11 +20,7 @@ const App = () => {
 
       </Routes>
 
-      <PowerStationCard/>
-      <PowerStationCard/>
-      <PowerStationCard/>
-      <PowerStationCard/>
-      <PowerStationCard/>
+ 
     
       
     </>
