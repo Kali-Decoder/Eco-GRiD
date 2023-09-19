@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import {SlEnergy} from "react-icons/sl";
-import {GiRollingEnergy} from "react-icons/gi";
+import { SlEnergy } from "react-icons/sl";
+import { GiRollingEnergy } from "react-icons/gi";
 const LandingPage = () => {
   return (
     <>
@@ -13,7 +13,8 @@ const LandingPage = () => {
               className="flex items-center text-lg mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
               <span className="mx-auto inline-block font-black leading-none text-white select-none">
-               <GiRollingEnergy size={30} color="white"/> Eco<span className="text-indigo-800 mt-1">-</span>
+                <GiRollingEnergy size={30} color="white" /> Eco
+                <span className="text-indigo-800 mt-1">-</span>
                 <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
@@ -97,7 +98,9 @@ const LandingPage = () => {
                   />
                 </h1>
                 <p className="mx-auto text-base text-white sm:max-w-md lg:text-3xl md:max-w-3xl">
-                The  <span className="font-bold text-blue-700">Eco-GRiD </span>platform enables efficient energy source management through its energy trading marketplace.
+                  The <span className="font-bold text-blue-700">Eco-GRiD </span>
+                  platform enables efficient energy source management through
+                  its energy trading marketplace.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
                   <a
@@ -138,94 +141,98 @@ const LandingPage = () => {
       </section>
 
       <section className="w-full bg-black pt-7 pb-7 md:pt-20 md:pb-24 overflow-x-hidden">
-  <div className="box-border flex flex-col items-center content-center  leading-6 text-black border-0 border-solid md:flex-row">
-    <div className="box-border relative w-full px-4 mt-6 mb-6  text-center bg-no-repeat bg-contain border-solid  md:mt-0 md:max-w-1/2 ">
-      <img
-        src="https://cdn.devdojo.com/images/december2020/productivity.png"
-        className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 mb-8"
-        alt="name"
-        style={{width:"100%"}}
-      />
-    </div>
+        <div className="box-border flex flex-col items-center content-center  leading-6 text-black border-0 border-solid md:flex-row">
+          <div className="box-border relative w-full px-4 mt-6 mb-6  text-center bg-no-repeat bg-contain border-solid  md:mt-0 md:max-w-1/2 ">
+            <img
+              src="https://cdn.devdojo.com/images/december2020/productivity.png"
+              className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 mb-8"
+              alt="name"
+              style={{ width: "90%" }}
+            />
+          </div>
 
-    <div className="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none mt-8">
-      <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-        Boost Productivity
-      </h2>
-      <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
-        Achieving complete decentralization, P2P trading, transparency, and optimal energy use fosters sustainability and self-reliance in our energy system.
-      </p>
-      <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
-        <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Complete Decentralization: Energy grid without central control.
-        </li>
-        <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Peer-to-Peer Energy Trading: Direct energy exchange between Sub Grid.
-        </li>
-        <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Transparency and Accountability: Open, traceable energy transactions.
-        </li>
-        <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Optimal energy use and Sustainable, self-reliant energy system.
-        </li>
-      </ul>
-    </div>
-  </div>
+          <div className="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none mt-8">
+            <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+              Boost Productivity
+            </h2>
+            <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+              Achieving complete decentralization, P2P trading, transparency,
+              and optimal energy use fosters sustainability and self-reliance in
+              our energy system.
+            </p>
+            <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Complete Decentralization: Energy grid without central control.
+              </li>
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Peer-to-Peer Energy Trading: Direct energy exchange between Sub
+                Grid.
+              </li>
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Transparency and Accountability: Open, traceable energy
+                transactions.
+              </li>
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-green-500 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Optimal energy use and Sustainable, self-reliant energy system.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-  <div className="box-border flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl">
-    <div className="box-border w-full text-black border-solid md:w-1/2 md:pl-6 ">
-      <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-        Features Provides
-      </h2>
-      <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
-        Save time and money with our revolutionary services. We are the leaders in the industry.
-      </p>
-      <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
-        <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Automated task management workflow
-        </li>
-        <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Detailed analytics for your data
-        </li>
-        <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-          <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
-            <span className="text-sm font-bold">✓</span>
-          </span>{" "}
-          Some awesome integrations
-        </li>
-      </ul>
-    </div>
+        <div className="box-border flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl">
+          <div className="box-border w-full text-black border-solid md:w-1/2 md:pl-6 ">
+            <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+              Features Provides
+            </h2>
+            <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+              Save time and money with our revolutionary services. We are the
+              leaders in the industry.
+            </p>
+            <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
+              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Automated task management workflow
+              </li>
+              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Detailed analytics for your data
+              </li>
+              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
+                  <span className="text-sm font-bold">✓</span>
+                </span>{" "}
+                Some awesome integrations
+              </li>
+            </ul>
+          </div>
 
-    <div className="box-border relative w-full max-w-md md:ml-6 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
-      <img
-        src="https://cdn.devdojo.com/images/december2020/settings.png"
-        className="pl-4 sm:pr-10 xl:pl-10 lg:pr-32"
-        alt="name"
-      />
-    </div>
-  </div>
-</section>
+          <div className="box-border relative w-full max-w-md md:ml-6 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-2/3">
+            <img
+              src="https://cdn.devdojo.com/images/december2020/settings.png"
+              alt="name"
+              style={{ width: "60% !important" }}
+            />
+          </div>
+        </div>
+      </section>
 
-
-      <section className="py-20  bg-black">
+      <section className="py-20  bg-black container mx-auto border">
         <div className="container items-center max-w-6xl px-8 mx-5">
           <div className="flex flex-wrap items-center -mx-3">
             <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
