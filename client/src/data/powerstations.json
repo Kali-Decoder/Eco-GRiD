@@ -5,14 +5,15 @@
       "name": "Power Station 1",
       "description": "Panipat Thermal Power Station I is located at Khukhrana Panipat in Haryana. The power plant is one of the coal based power plants of HPGCL",
       "total_Substations": 10,
-      "connection_types": [11000, 6000],
+      "connection_types": ["14 kV AC", "13 kV AC"],
       "walletAddress": "0xabcdef1234",
-      "img_url": "",
+      "img_url": "https://img.freepik.com/premium-vector/landscape-field-with-solar-panels-sustainable-renewable-green-energy-concept-scenery-with-ecofriendly-electricity-resources-power-plan-factory_142963-1360.jpg?w=2000",
       "location": {
         "lat": "12.4",
         "lot": "13"
       },
-      "capacity": 12000
+      "capacity": 12000,
+      "efficiency":3.5
     },
     {
       "id": "2",
@@ -26,7 +27,8 @@
         "lat": "34.05",
         "lot": "-118.24"
       },
-      "capacity": 8000
+      "capacity": 8000,
+      "efficiency":4.5
     },
     {
       "id": "3",
@@ -40,7 +42,8 @@
         "lat": "32.78",
         "lot": "-99.92"
       },
-      "capacity": 6000
+      "capacity": 6000,
+      "efficiency":2.5
     },
     {
       "id": "4",
@@ -54,7 +57,8 @@
         "lat": "53.73",
         "lot": "-122.64"
       },
-      "capacity": 9500
+      "capacity": 9500,
+      "efficiency":3.0
     },
     {
       "id": "5",
@@ -68,7 +72,8 @@
         "lat": "64.14",
         "lot": "-21.94"
       },
-      "capacity": 7200
+      "capacity": 7200,
+      "efficiency":4.35
     }
   ]
 }
