@@ -1,7 +1,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { SlEnergy } from "react-icons/sl";
+import { FaSuperpowers } from "react-icons/fa";
 import { GiRollingEnergy } from "react-icons/gi";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 const LandingPage = () => {
   return (
     <>
@@ -10,15 +11,19 @@ const LandingPage = () => {
           <div className="relative flex flex-col md:flex-row">
             <a
               href="/"
-              className="flex items-center text-lg mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+              className="flex mt-4 flex-col items-center mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
-              <span className="mx-auto inline-block font-black leading-none text-white select-none">
-                <GiRollingEnergy size={30} color="white" /> Eco
-                <span className="text-indigo-800 mt-1">-</span>
+              <GiRollingEnergy size={40} color="white" />
+              <span
+                className="mx-auto mt-1 text-white select-none"
+                style={{ fontSize: "25px" }}
+              >
+                Eco
+                <span className="text-indigo-800">-</span>
                 <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
-            <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200">
+            <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-gray-200">
               <a
                 href="#_"
                 className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
@@ -48,7 +53,7 @@ const LandingPage = () => {
 
           <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
             <a
-              href="/"
+              href="/go"
               className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
             >
               Let's Go, See Future
@@ -103,7 +108,8 @@ const LandingPage = () => {
                   its energy trading marketplace.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
-                  <a
+                  <ConnectButton />
+                  {/* <a
                     href="#_"
                     className="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto"
                   >
@@ -121,7 +127,7 @@ const LandingPage = () => {
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
-                  </a>
+                  </a> */}
                   {/* <a
                     href="#_"
                     className="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
@@ -133,16 +139,16 @@ const LandingPage = () => {
             </div>
             <div className="w-full md:w-1/3 flex flex-end">
               <div className="w-full  h-auto overflow-hidden rounded-sm">
-                <SlEnergy color="yellow" size={400} />
+                <FaSuperpowers color="#00C5CD" size={400} />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="w-full bg-black pt-7 pb-7 md:pt-20 md:pb-24 overflow-x-hidden">
-        <div className="box-border flex flex-col items-center content-center  leading-6 text-black border-0 border-solid md:flex-row">
-          <div className="box-border relative w-full px-4 mt-6 mb-6  text-center bg-no-repeat bg-contain border-solid  md:mt-0 md:max-w-1/2 ">
+      <section className="w-full bg-black">
+        <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-solid md:flex-row max-w-7xl lg:px-16">
+          <div className="box-border relative w-full max-w-md px-4 mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
             <img
               src="https://cdn.devdojo.com/images/december2020/productivity.png"
               className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 mb-8"
@@ -315,7 +321,65 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+      <div className="section2 mx-auto bg-black flex justify-center items-center">
+        <div className="features flex flex-wrap">
+          <div className="tile access">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-access-anywhere.svg"
+              alt="access icon"
+            />
+            <h3 className="mt-4 font-bold text-yellow-300 uppercase">
+              Access your files, anywhere
+            </h3>
+            <p className="mt-4">
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
+          <div className="tile security">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-security.svg"
+              alt="security icon"
+            />
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+              Security you can trust
+            </h3>
 
+            <p className="mt-4">
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </div>
+          <div className="tile real-time">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-collaboration.svg"
+              alt="clock icon"
+            />
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+              Real-time collaboration
+            </h3>
+            <p className="mt-4">
+              Securely share files and folders with friends, family, and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+          <div className="tile storage">
+            <img
+              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-any-file.svg"
+              alt="storage icon"
+            />
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+              Store any type of file
+            </h3>
+            <p className="mt-4">
+              Whether you're sharing holidays, photos, or work documents, Fylo
+              as you covered, allowing for all file types to be securely stored
+              and shared.
+            </p>
+          </div>
+        </div>
+      </div>
       <section className="flex items-center justify-center py-20 bg-black min-w-screen">
         <div className="px-16 bg-black">
           <div className="container flex flex-col items-start mx-auto lg:items-center">
@@ -393,79 +457,6 @@ const LandingPage = () => {
                   for. I would highly recommend this to anyone."
                 </blockquote>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="box-border py-8 leading-7 text-gray-900 bg-black border-0 border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24">
-        <div className="box-border max-w-6xl px-4 pb-12 mx-auto border-solid sm:px-6 md:px-6 lg:px-4">
-          <div className="flex flex-col items-center leading-7 text-center text-gray-900">
-            <h2 className="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-5xl">
-              Pricing Options
-            </h2>
-            <p className="box-border mt-4 text-2xl leading-normal text-gray-900 border-solid">
-              We've got a plan for companies of any size
-            </p>
-          </div>
-          <div className="grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-b-4 border-gray-300 border-blue-600 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-3">
-            <div className="box-border px-4 py-8 mb-6 text-center bg-white border-solid lg:mb-0 sm:px-4 sm:py-8 md:px-8 md:py-12 lg:px-10">
-              <h3 className="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-4xl">
-                Basic
-              </h3>
-              <p className="mt-3 leading-7 text-gray-900 border-0 border-solid">
-                The basic plan is a good fit for smaller teams and startups
-              </p>
-              <div className="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-                <p className="box-border m-0 text-6xl font-semibold leading-normal text-center border-0 border-gray-200">
-                  $19
-                </p>
-                <p className="box-border my-0 ml-4 mr-0 text-xs text-left border-0 border-gray-200">
-                  per user <span className="block">per month</span>
-                </p>
-              </div>
-
-              <button className="inline-flex items-center justify-center w-full py-3 mt-6 font-sans text-sm leading-none text-center text-blue-600 no-underline bg-transparent border border-b-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-600 hover:border-blue-600 hover:text-white sm:text-base sm:mt-8 md:text-lg">
-                Select Plan
-              </button>
-            </div>
-            <div className="box-border px-4 py-8 mb-6 text-center bg-gray-100 border border-gray-300 border-solid lg:mb-0 sm:px-4 sm:py-8 md:px-8 md:py-12 lg:px-10">
-              <h3 className="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-4xl">
-                Plus
-              </h3>
-              <p className="mt-3 leading-7 text-gray-900 border-0 border-solid">
-                The plus plan is a good fit for medium-size to larger companies
-              </p>
-              <div className="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-                <p className="box-border m-0 text-6xl font-semibold leading-normal text-center border-0 border-gray-200">
-                  $39
-                </p>
-                <p className="box-border my-0 ml-4 mr-0 text-xs text-left border-0 border-gray-200">
-                  per user <span className="block">per month</span>
-                </p>
-              </div>
-              <button className="inline-flex items-center justify-center w-full py-3 mt-6 font-sans text-sm leading-none text-center text-white no-underline bg-blue-600 border-b-4 border-blue-700 rounded cursor-pointer hover:text-white sm:text-base sm:mt-8 md:text-lg">
-                Select Plan
-              </button>
-            </div>
-            <div className="box-border px-4 py-8 text-center bg-white border-solid sm:px-4 sm:py-8 md:px-8 md:py-12 lg:px-10">
-              <h3 className="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-4xl">
-                Pro
-              </h3>
-              <p className="mt-3 leading-7 text-gray-900 border-0 border-solid">
-                The pro plan is a good fit for larger and enterprise companies.
-              </p>
-              <div className="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-                <p className="box-border m-0 text-6xl font-semibold leading-normal text-center border-0 border-gray-200">
-                  $59
-                </p>
-                <p className="box-border my-0 ml-4 mr-0 text-xs text-center border-0 border-gray-200">
-                  per user <span className="block">per month</span>
-                </p>
-              </div>
-              <button className="inline-flex items-center justify-center w-full py-3 mt-6 font-sans text-sm leading-none text-center text-blue-600 no-underline bg-transparent border border-b-2 border-blue-600 rounded cursor-pointer hover:bg-blue-600 hover:border-blue-600 hover:text-white sm:text-base sm:mt-8 md:text-lg">
-                Select Plan
-              </button>
             </div>
           </div>
         </div>
@@ -581,7 +572,7 @@ const LandingPage = () => {
               </svg>
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">Dribbble</span>
+              <span className="sr-only">Kali-Decoder</span>
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"
