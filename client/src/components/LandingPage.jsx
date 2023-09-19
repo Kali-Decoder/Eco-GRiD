@@ -147,13 +147,13 @@ const LandingPage = () => {
       </section>
 
       <section className="w-full bg-black">
-        <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-solid md:flex-row max-w-7xl lg:px-16">
-          <div className="box-border relative w-full max-w-md px-4 mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+        <div className="box-border flex flex-col items-center content-center  mx-auto leading-6 text-black  md:flex-row max-w-7xl mb-10">
+          <div className="box-border relative w-full max-w-md mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
             <img
               src="https://cdn.devdojo.com/images/december2020/productivity.png"
               className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 mb-8"
               alt="name"
-              style={{ width: "90%" }}
+              style={{ width: "100%" }}
             />
           </div>
 
@@ -197,7 +197,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="box-border flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl">
+        <div className="box-border mb-10 flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl">
           <div className="box-border w-full text-black border-solid md:w-1/2 md:pl-6 ">
             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
               Features Provides
@@ -232,7 +232,7 @@ const LandingPage = () => {
             <img
               src="https://cdn.devdojo.com/images/december2020/settings.png"
               alt="name"
-              style={{ width: "60% !important" }}
+              style={{ width: "80%" }}
             />
           </div>
         </div>
