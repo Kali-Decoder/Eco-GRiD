@@ -3,10 +3,9 @@ import Card from "../components/base/Card";
 import "../styles/NFTDetail.css";
 import { useLocation, useNavigate } from "react-router";
 import { ColorExtractor } from "react-color-extractor";
-import Button from "../components/base/Button";
+
 import { FaEthereum } from "react-icons/fa";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { useARStatus } from "../hooks/isARStatus";
+
 const NFTDetail = () => {
   const [colors, setColors] = useState([]);
 

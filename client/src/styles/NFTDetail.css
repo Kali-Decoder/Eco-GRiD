@@ -13,15 +13,21 @@
     height:100%;
     /* border:1px solid red; */
     display:flex;
+    justify-content: space-between;
     flex-direction:row;
 }
 
 #detail-image{
-    width:60%;
-    height:100%;
+   
+
+    width:50%;
+    height:80%;
     object-fit:cover;
-    border-radius:30px;
+    border-radius:10px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
+
 model-viewer#arDetail{
     width:60%;
     height:100%;
@@ -30,19 +36,10 @@ model-viewer#arDetail{
     width:40%;
     height:100%;
     /* border:1px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
 
-#detail-info-container{
-    width:100%;
-    height:90%;
-    /* border:1px solid red; */
-    margin-bottom:20px;
-    overflow:hidden;
-    padding-bottom:20px;
-}
+
 
  p#name {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -100,6 +97,7 @@ p#description{
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size:18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .like-container > p.like-count{

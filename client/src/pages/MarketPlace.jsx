@@ -16,10 +16,10 @@ const Home = () => {
      <Link to=""><MdOutlineKeyboardBackspace onClick={()=>navigate(-1)} color="white" size={50} /></Link>
      </div>
       <Hero list={hotDropsData} />
-      <p id="card-list-header-text"> Hot Drops </p>
-      <div id="list-container">
+      <p id="card-list-header-text"> Hot Power Plants </p>
+      {/* <div id="list-container">
         <CardList list={hotDropsData} />
-      </div>
+      </div> */}
     </div>
   );
 };
