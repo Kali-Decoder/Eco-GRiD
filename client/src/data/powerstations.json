@@ -22,7 +22,7 @@
       "total_Substations": 5,
       "connection_types": ["11 kV AC", "33 kV AC"],
       "walletAddress": "0x1234567890",
-      "img_url": "",
+      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC8VZkpPiOrnkUHn9U0f9jKfNmFCOuG3zEEaHeXdYSdfjCOdeQfpnnR-kwNbiczaiNtNQ&usqp=CAU",
       "location": {
         "lat": "34.05",
         "lot": "-118.24"
