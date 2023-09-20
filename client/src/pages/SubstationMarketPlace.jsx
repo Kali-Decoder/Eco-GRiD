@@ -7,18 +7,31 @@ import powerstations from "../data/powerstations.json";
 import substations from "../data/substations.json";
 const SubstationMarketPlace = () => {
   const [connectionTypeDown, setConnectionTypeDown] = useState(false);
+  const [distanceBetween, setDistanceBetween] = useState(false);
+  const [perUnitPriceDown, setPerUnitPriceDown] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [filteredData,setFilteredData]=useState([]);
+  const [unitPriceHighLow, setUnitPriceHighLow] = useState(true);
+  const [connectionType,setConnectionType] = useState("");
+  const [distance,setDistance] = useState(0);
+
 
   const toggleDropdown = () => {
     setConnectionTypeDown(!connectionTypeDown);
   };
+  const toggleDistanceDropdown = () => {
+    setDistanceBetween(!distanceBetween);
+  };
+  const togglePerUnitDropdown = () => {
+    setPerUnitPriceDown(!perUnitPriceDown);
+  };
   let navigate = useNavigate();
   const { id } = useParams();
   const powerstation = powerstations.powerstations.filter(
-    (item) => item.id == id
+    (item) => item.id === id
   )[0];
   const filterSubstations = substations.substations.filter(
-    (item) => item.powerstation_id == id
+    (item) => item.powerstation_id === id
   );
 
   return (
@@ -39,15 +52,19 @@ const SubstationMarketPlace = () => {
           Sub-Stations
         </h1>
       </div>
-      <div className="container mx-auto flex justify-between">
-        <div className="relative w-56">
+      <div className="container mx-auto flex">
+        <div className="relative w-56 mx-3">
           <input
             className="peer hidden"
             type="checkbox"
             name="select-1"
             id="select-1"
             checked={connectionTypeDown}
-            onChange={toggleDropdown}
+            
+            onChange={(e)=>{
+              setConnectionType(e.target.value);
+              toggleDropdown();
+            }}
           />
           <label
             htmlFor="select-1"
@@ -89,17 +106,17 @@ const SubstationMarketPlace = () => {
             </li>
           </ul>
         </div>
-        <div className="relative w-56">
+        <div className="relative w-56 mx-3">
           <input
             className="peer hidden"
             type="checkbox"
-            name="select-1"
-            id="select-1"
-            checked={connectionTypeDown}
-            onChange={toggleDropdown}
+            name="select-2"
+            id="select-2"
+            checked={distanceBetween}
+            onChange={toggleDistanceDropdown}
           />
           <label
-            htmlFor="select-1"
+            htmlFor="select-2"
             className="flex w-full cursor-pointer select-none rounded-lg border p-2 px-3 text-sm text-white ring-blue-400 peer-checked:ring"
           >
             Near By Location
@@ -107,7 +124,7 @@ const SubstationMarketPlace = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`pointer-events-none absolute right-0 top-3 ml-auto mr-5 h-4 text-gray-600 transition ${
-              connectionTypeDown ? "peer-checked:rotate-180" : ""
+              distanceBetween ? "peer-checked:rotate-180" : ""
             }`}
             fill="none"
             viewBox="0 0 24 24"
@@ -122,19 +139,62 @@ const SubstationMarketPlace = () => {
           </svg>
           <ul
             className={`max-h-0 select-none flex-col overflow-hidden rounded-b-lg shadow-xl transition-all duration-300 ${
-              connectionTypeDown
-                ? "peer-checked:max-h-56 peer-checked:py-3"
-                : ""
+              distanceBetween ? "peer-checked:max-h-56 peer-checked:py-3" : ""
             }`}
           >
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Nikola Tesla
+              1-10km
             </li>
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Lorem Ipsanum
+              20-30km
             </li>
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Albert Einstein
+              30-Above
+            </li>
+          </ul>
+        </div>
+
+        <div className="relative w-56 mx-3">
+          <input
+            className="peer hidden"
+            type="checkbox"
+            name="select-3"
+            id="select-3"
+            checked={perUnitPriceDown}
+            onChange={togglePerUnitDropdown}
+          />
+          <label
+            htmlFor="select-3"
+            className="flex w-full cursor-pointer select-none rounded-lg border p-2 px-3 text-sm text-white ring-blue-400 peer-checked:ring"
+          >
+            Per Unit Price
+          </label>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className={`pointer-events-none absolute right-0 top-3 ml-auto mr-5 h-4 text-gray-600 transition ${
+              perUnitPriceDown ? "peer-checked:rotate-180" : ""
+            }`}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <ul
+            className={`max-h-0 select-none flex-col overflow-hidden rounded-b-lg shadow-xl transition-all duration-300 ${
+              perUnitPriceDown ? "peer-checked:max-h-56 peer-checked:py-3" : ""
+            }`}
+          >
+            <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
+              Low to High
+            </li>
+            <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
+              High to Low
             </li>
           </ul>
         </div>
