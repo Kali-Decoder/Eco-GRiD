@@ -1,23 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/base/Card";
 import "../styles/NFTDetail.css";
-import { useLocation, useNavigate } from "react-router";
-import { ColorExtractor } from "react-color-extractor";
+import { Link } from "react-router-dom";
 
-import { FaEthereum } from "react-icons/fa";
-
-const NFTDetail = () => {
-  const [colors, setColors] = useState([]);
-
-  const [isLike, setIsLike] = useState(false);
-
-  const like = () => setIsLike(!isLike);
-
-  const getColors = (colors) => {
-    setColors((c) => [...c, ...colors]);
-  };
-
-  const navigate = useNavigate();
+const PowerStationCard = ({ item }) => {
 
   return (
     <div>
@@ -25,33 +11,77 @@ const NFTDetail = () => {
         <Card
           width="60%"
           height="60vh"
-          blurColor={colors[0]}
+          
           child={
             //Detail Content
             <div id="detail-content">
               {" "}
-              <ColorExtractor getColors={getColors}>
-                <img
-                  id="detail-image"
-                  src="https://images.unsplash.com/photo-1614812513172-567d2fe96a75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                />
-              </ColorExtractor>
+              <img id="detail-image" src={item?.img_url} />
               <div
                 id="detail-info"
                 className="flex justify-center items-center flex-col"
               >
                 <div id="detail-info-container">
-                  <p id="name"> Power Station 1 </p>
-                  <p id="description">
-                    {" "}
-                    Panipat Thermal Power Station I is located at Khukhrana
-                    Panipat in Haryana. The power plant is one of the coal based
-                    power plants of HPGCL{" "}
+                  <p id="name" className="text-white font-bold">
+                    {item?.name}
                   </p>
-                  <button className="flex mt-5 text-center w-full justify-center border items-center px-10 rounded-lg shadow-2xl hover:shadow-sm font-medium hover:text-blue-400">
-                    <FaEthereum size="28px" />
-                    <p id="price" className="text-2xl">
-                      Let's Trade
+                  <p id="description" className="text-white">
+                    {item?.description}
+                  </p>
+                  <div class="flex space-x-2 mt-3 mx-auto justify-center flex-row items-center">
+                    <div class="flex w-1/3 flex-col items-center rounded-xl bg-black px-4 py-2">
+                      <p class="text-sm font-medium text-gray-300">
+                        Sub Stations
+                      </p>
+                      <p class="text-5xl font-bold text-yellow-400 ">13</p>
+                    </div>
+                    <div class="flex w-1/3 flex-col items-center rounded-xl bg-black px-4 py-2">
+                      <p class="text-sm font-medium text-gray-300">Capacity</p>
+                      <p class="text-5xl font-bold text-yellow-400 ">
+                        {item?.capacity}
+                      </p>
+                    </div>
+                    <div class="flex w-1/3 flex-col items-center rounded-xl bg-black px-4 py-2">
+                      <p class="text-sm font-medium text-gray-300">
+                        Efficiency
+                      </p>
+                      <p class="text-5xl font-bold text-yellow-400 ">{item?.efficiency}</p>
+                    </div>
+                    <div class=""></div>
+                  </div>
+                  <p className="text-white font-bold mt-4 text-left">
+                    Connection Type
+                  </p>
+                  <div className="mt-3 flex flex-row ">
+                    {item?.connection_types.map((item, i) => {
+                      return (
+                        <div class="ml-4 text-lg inline-flex items-center font-bold leading-lg uppercase px-3 py-1 bg-orange-200 text-blue-700 rounded-full">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-activity mr-2"
+                          >
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                          </svg>
+                          {item}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <button className="flex mt-5 py-3 text-center w-full justify-center border items-center px-10 rounded-lg shadow-2xl hover:shadow-sm font-medium hover:text-blue-400">
+                    <p
+                      id="price"
+                      style={{ fontSize: "15px" }}
+                      className="text-2xl font-bold text-lg hover:text-blue-500"
+                    >
+                      <Link to={`/${item?.id}/substations`}>Let's Trade</Link>
                     </p>
                   </button>
                 </div>
@@ -64,4 +94,4 @@ const NFTDetail = () => {
   );
 };
 
-export default NFTDetail;
+export default PowerStationCard;

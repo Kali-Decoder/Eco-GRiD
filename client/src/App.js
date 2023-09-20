@@ -4,8 +4,7 @@ import UserDashboard from "./components/UserDashboard";
 import {Routes,Route} from "react-router-dom";
 import MarketPlace from "./pages/MarketPlace";
 import Explore from "./pages/Explore";
-import NFTDetail from "./pages/NFTDetail";
-import PowerStationCard from "./components/PowerStationCard";
+import SubstationMarketPlace from "./pages/SubstationMarketPlace";
 const App = () => {
   
   return (
@@ -16,15 +15,10 @@ const App = () => {
         <Route path="/user-dashboard" exact element={<UserDashboard/>} />
         <Route path="/marketplace" exact element={<MarketPlace/>} />
         <Route path="/explore" exact element={<Explore/>} />
-        
-
+        <Route path="/:id/substations" exact element={<SubstationMarketPlace/>} />
       </Routes>
 
-      <PowerStationCard/>
-      <PowerStationCard/>
-      <PowerStationCard/>
-      <PowerStationCard/>
-      <PowerStationCard/>
+ 
     
       
     </>

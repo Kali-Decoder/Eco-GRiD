@@ -5,6 +5,8 @@ import "../styles/Explore.css";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import PowerStationCard from "../components/PowerStationCard";
+import powerstations from "../data/powerstations.json";
 const Explore = () => {
   let navigate = useNavigate();
   return (
@@ -22,11 +24,10 @@ const Explore = () => {
         <h1 id="header-text-first"> 🔋 </h1>
         <h1 id="header-text-second"> Explore Marketplace</h1>
       </div>
-      <div id="explore" className="mt-0">
-        <div id="list-container">
-          <CardList list={exploreList} />
-        </div>
-      </div>
+
+      {powerstations.powerstations.map((item, i) => {
+        return <PowerStationCard item={item} key={i} />;
+      })}
     </>
   );
 };
