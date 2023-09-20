@@ -6,7 +6,7 @@
       "name": "Substation 1A",
       "description": "Panipat Thermal Power Station I is located at Khukhrana Panipat in Haryana. The power plant is one of the coal based power plants of HPGCL",
       "total_Substations": 10,
-      "connection_types": [11000, 6000],
+      "connection_types": ["11 kV", "6 kV"],
       "walletAddress": "0xabcdef1234",
       "img_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Felectricity-substation&psig=AOvVaw2W15Ym5wT81kTdaHdGjjIZ&ust=1695300445362000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCNCouLicuYEDFQAAAAAdAAAAABAE",
       "location": {

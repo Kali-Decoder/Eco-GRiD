@@ -5,7 +5,7 @@
       "name": "Power Station 1",
       "description": "Panipat Thermal Power Station I is located at Khukhrana Panipat in Haryana. The power plant is one of the coal based power plants of HPGCL",
       "total_Substations": 10,
-      "connection_types": ["14 kV AC", "13 kV AC"],
+      "connection_types": ["11 kV AC", "132 kV AC", "200kV AC"],
       "walletAddress": "0xabcdef1234",
       "img_url": "https://img.freepik.com/premium-vector/landscape-field-with-solar-panels-sustainable-renewable-green-energy-concept-scenery-with-ecofriendly-electricity-resources-power-plan-factory_142963-1360.jpg?w=2000",
       "location": {
@@ -20,7 +20,7 @@
       "name": "Solar Power Station A",
       "description": "Solar Power Station A is located in a sunny region in California. It harnesses the power of the sun to generate electricity, providing clean and sustainable energy to the region.",
       "total_Substations": 5,
-      "connection_types": ["11 kV AC", "33 kV AC"],
+      "connection_types": ["11 kV AC", "33 kV AC", "66 kV AC"],
       "walletAddress": "0x1234567890",
       "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC8VZkpPiOrnkUHn9U0f9jKfNmFCOuG3zEEaHeXdYSdfjCOdeQfpnnR-kwNbiczaiNtNQ&usqp=CAU",
       "location": {
@@ -35,7 +35,7 @@
       "name": "Wind Energy Farm B",
       "description": "Wind Energy Farm B is situated on the windy plains of Texas. It features a collection of wind turbines that generate electricity from the power of the wind, contributing to a greener future.",
       "total_Substations": 6,
-      "connection_types": ["6 kV AC", "15 kV AC"],
+      "connection_types": ["6 kV AC", "15 kV AC", "30 kV AC"],
       "walletAddress": "0x2345678901",
       "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wind_turbines_in_southern_California_2016.jpg/495px-Wind_turbines_in_southern_California_2016.jpg",
       "location": {
@@ -50,7 +50,7 @@
       "name": "Hydroelectric Power Station C",
       "description": "Hydroelectric Power Station C is nestled in the mountains of British Columbia, Canada. It harnesses the power of flowing water to generate clean and sustainable electricity.",
       "total_Substations": 4,
-      "connection_types": ["13 kV AC", "22 kV AC"],
+      "connection_types": ["13 kV AC", "33 kV AC", "220 kV AC"],
       "walletAddress": "0x3456789012",
       "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/ThreeGorgesDam-China2009.jpg/450px-ThreeGorgesDam-China2009.jpg",
       "location": {
@@ -81,7 +81,7 @@
         "name": "Solar Power Station B",
         "description": "Solar Power Station B is situated in the sunny deserts of Arizona, USA. It harnesses solar energy to generate clean electricity for the region.",
         "total_Substations": 5,
-        "connection_types": ["12 kV AC", "24 kV AC"],
+        "connection_types": ["132 kV AC", "220 kV AC", "400 kV AC"],
         "walletAddress": "0x5678901234",
         "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Foto_a%C3%A9re_de_solnovas_y_torre_junio_2010.jpg/1920px-Foto_a%C3%A9re_de_solnovas_y_torre_junio_2010.jpg",
         "location": {
@@ -111,7 +111,7 @@
         "name": "Hydroelectric Power Station E",
         "description": "Hydroelectric Power Station E is nestled in the mountains of Switzerland. It harnesses the power of mountain streams to produce clean and sustainable electricity.",
         "total_Substations": 4,
-        "connection_types": ["16 kV AC", "32 kV AC"],
+        "connection_types": ["11kV AC", "32 kV AC"],
         "walletAddress": "0x7890123456",
         "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7Vcj3Mso973nskS5Xb-KoLpZ7QhRgOF9cA&usqp=CAU",
         "location": {
