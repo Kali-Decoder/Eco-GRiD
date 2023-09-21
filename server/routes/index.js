@@ -42,28 +42,27 @@ router.get("/get-qrcode", async (req, res) => {
 
 router.post("/register-doc", async (req, res) => {
   const uniqueID = uuidv4();
-  const name ="Neeraj"
-  const title = "Software Engineer"
-  const number = "1234567890"
+  const name = "Neeraj";
+  const title = "Software Engineer";
+  const number = "1234567890";
+  const fileURL =
+    "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
   const sendData = {
     uniqueId: uniqueID,
-    fileurl: "fileurlgoeshere",
-    metadata:
-      `Name: ${name} || Title: ${title} || Phone: ${number}`,
+    fileurl: fileURL,
+    metadata: `Name: ${name} || Title: ${title} || Phone: ${number}`,
     parent_delimiter: "||",
     child_delimiter: ":",
     Ispublic: 0,
-    authorizedusers:
-      "eco-grid@gmail.com",
+    authorizedusers: "eco-grid@gmail.com",
     Redirecturl: "https://www.google.com",
     IsVerificationGatewayRequired: "true",
     sendmetadatatoblockchain: "true",
-    metadataforblockchain:
-      "Nothing to record",
+    metadataforblockchain: "Nothing to record",
     isparent: 0,
     parentid: "0xcfa038455b54714821f291814071161c9870B891",
-  }
-  
+  };
+
   try {
     let response = await axios.post(
       "https://my.veridocglobal.com/api/submitdocument",
