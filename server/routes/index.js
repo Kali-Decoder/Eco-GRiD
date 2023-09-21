@@ -85,4 +85,30 @@ router.post("/register-doc", async (req, res) => {
   }
 });
 
+router.post("/verify-doc", async (req, res) => {
+  const uniqueID = "123";
+  try {
+    let response = await axios.get(
+      "https://stage.veridocglobal.com/api/verification",
+      {
+        uniqueid: uniqueID,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          apikey: process.env.VERI_DOC_PRIVATE_KEY,
+          payload: await getSHAHash([
+            process.env.VERI_DOC_PRIVATE_KEY,
+            uniqueID,
+            process.env.VERI_DOC_SECRET_KEY,
+          ].join()),
+        },
+      }
+    );
+    return res.json({ message: response.data });
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+});
 module.exports = router;
