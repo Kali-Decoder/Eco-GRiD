@@ -11,7 +11,7 @@ const LandingPage = () => {
   //     let res = await axios.get("http://localhost:8080/api/get-qrcode");
   //     const {message:{message,qr,qrimage,uniqueId}} = await res.data;
   //     console.log({message,qr,qrimage,uniqueId})
-  //     setImageUrl(qrimage);
+      
   //   })()
   // },[]);
   return (
