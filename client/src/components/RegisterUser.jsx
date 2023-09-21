@@ -19,10 +19,10 @@ const RegisterUser = () => {
                text-[#1A2421]
                bg-black
                [ p-8 md:p-10 lg:p-10 ]
-               border"
+               "
         >
-          <h1 className="mb-6 uppercase text-yellow-600 font-bold [ text-xl md:text-xl lg:text-xl ]">
-            Register User
+          <h1 className="mb-6 uppercase  text-violet-600 font-bold [ text-xl md:text-xl lg:text-xl ]">
+            Register client
           </h1>
           <label
             for="name"
