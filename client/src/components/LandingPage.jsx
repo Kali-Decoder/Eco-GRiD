@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaSuperpowers } from "react-icons/fa";
 import { GiRollingEnergy } from "react-icons/gi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import axios from "axios";
 const LandingPage = () => {
+  // const [imageUrl,setImageUrl] = useState("");
+  // useEffect(() => {
+  //   (async()=>{
+  //     let res = await axios.get("http://localhost:8080/api/get-qrcode");
+  //     const {message:{message,qr,qrimage,uniqueId}} = await res.data;
+  //     console.log({message,qr,qrimage,uniqueId})
+  //     setImageUrl(qrimage);
+  //   })()
+  // },[]);
   return (
     <>
       <section className="w-full px-8 text-gray-700 bg-black overflow-x-hidden">
@@ -23,6 +33,8 @@ const LandingPage = () => {
                 <span className="text-indigo-600">GRiD</span>
               </span>
             </a>
+        
+        
             <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-gray-200">
               <a
                 href="#_"

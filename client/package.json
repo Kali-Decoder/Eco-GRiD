@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@google/model-viewer": "^1.10.1",
     "@rainbow-me/rainbowkit": "^1.0.4",

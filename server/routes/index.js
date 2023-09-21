@@ -4,18 +4,6 @@ const { getSHAHash } = require("../utils");
 const router = express.Router();
 const uuidv4 = require("uuid");
 
-// APIKEY
-// UNIQUEID
-// FILEURL
-// METADATA
-// PARENT_DELIMITER
-// CHILD_DELIMITER
-// REDIRECTURL
-// SENDMETADATATOBLOCKCHAIN
-// METADATAFORBLOCKCHAIN
-// ISPARENT
-// PARENTID
-// SECRETKEY
 router.get("/get-qrcode", async (req, res) => {
   try {
     let response = await axios.post(
