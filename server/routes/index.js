@@ -34,7 +34,7 @@ router.post("/register-doc", async (req, res) => {
   const title = "Software Engineer";
   const number = "1234567890";
   const fileURL =
-    "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+    "https://drive.google.com/open?id=1E2X78s6vI2lYWyy1Vu7onFfr0jYb6t0H";
   const sendData = {
     uniqueId: uniqueID,
     fileurl: fileURL,
