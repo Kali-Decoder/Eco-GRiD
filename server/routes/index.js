@@ -85,10 +85,10 @@ router.post("/register-doc", async (req, res) => {
   }
 });
 
-router.post("/verify-doc", async (req, res) => {
-  const uniqueID = "123";
+router.get("/verify-doc", async (req, res) => {
+  const uniqueID = "b6537845-98fa-4e40-82f4-f06e060611e0";
   try {
-    let response = await axios.get(
+    let response = await axios.post(
       "https://stage.veridocglobal.com/api/verification",
       {
         uniqueid: uniqueID,

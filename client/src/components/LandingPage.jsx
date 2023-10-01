@@ -89,7 +89,7 @@ const LandingPage = () => {
                       "Transforming Grids !",
                       3000,
                       () => {
-                        console.log("Sequence completed");
+                        
                       },
                     ]}
                     wrapper="span"
