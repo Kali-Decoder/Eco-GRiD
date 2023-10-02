@@ -35,35 +35,36 @@ const LandingPage = () => {
             </a>
         
         
-            <nav className="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-gray-200">
+           
+          </div>
+
+          <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
+          <nav className="flex flex-wrap justify-center items-center mb-0 text-base  md:border-gray-200">
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
+                className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Home
               </a>
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
+                className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Features
               </a>
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
+                className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Pricing
               </a>
               <a
                 href="#_"
-                className="mr-5 font-medium leading-6 text-gray-600 hover:text-white"
+                className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Blog
               </a>
             </nav>
-          </div>
-
-          <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
             <a
               href="/marketplace"
               className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
