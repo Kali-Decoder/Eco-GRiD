@@ -13,10 +13,10 @@ In response to the Verihack Problem Statement 5, we propose an Energy Trading ma
 
 Within national grids, our solution empowers prosumers, including users, substations, and power stations, to engage in energy transactions, buying and selling. Users can efficiently sell surplus renewable energy to their nearest grid, enhancing grid stability. Additionally, machine learning algorithms continuously analyze energy data, predict demand trends, and optimize renewable resource utilization for efficient and sustainable energy use.
 
-###Assumptions:
+### Assumptions:
 Our solution relies on several key assumptions, including stakeholder willingness to adopt blockchain technology, data availability for machine learning predictions, regulatory support for decentralized trading, and active prosumer participation. Adequate funding for infrastructure development and ongoing technological advancements are also assumed.
 
-###VeriDoc API Use Case: 
+### VeriDoc API Use Case: 
 Our platform requires just three routes for user authorization:- 
 Submit Document Route (/api/submitdocument)
 Why? :- Users can register by utilizing the Veri-doc API's Submit-Doc functionality for document submission.(Submitting PAN card Document).
@@ -27,7 +27,6 @@ At Last Verification Route (/api/verification)
 
 The same process applies when placing buy and sell orders, with the platform automatically generating invoices.
 
-
 ## Core Features:
 - Cross-Border P2P Trading
 - P2G and G2P Transactions
@@ -36,24 +35,22 @@ The same process applies when placing buy and sell orders, with the platform aut
 - Real-time Monitoring
 - Automated Settlements
 
+## Team Members:
+- Neeraj Choubisa
+- Rakesh Roushan
+- Sneha Gupta
+
 ## How to Get Started:
 1. Clone the repository.
 2. Set up the required dependencies.
 3. Explore the codebase, including the VeriDoc API integration.
 4. Run the application locally to see our solution in action.
 
-
 ## Flowchart:
 ![SIH-2](https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/952ca8ff-f460-4c7e-9bd7-a763c9a768c1)
-
 
 **Screenshots:**
 <img width="1470" alt="Landing Page" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
 <img width="1470" alt="Marketplace" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/b6881907-e04e-4b87-8021-e0ad1606b0c8">
-
-**Team Members:**
-- Neeraj Choubisa
-- Rakesh Roushan
-- Sneha Gupta
 
 Explore the future of clean energy trading with EcoGRiD. Join us on this journey towards a sustainable and eco-friendly energy future.
