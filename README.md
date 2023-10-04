@@ -1,10 +1,4 @@
-# Eco-GRid
-Veri-Hack ( VeriDoc  Verification of Documents )
-<br>
-
-
-
-# EcoGRiD: Empowering Clean Energy Trading with Blockchain
+# Eco-GRiD: Empowering Clean Energy Trading with Blockchain
 
 **Problem Statement and Solution**
 
