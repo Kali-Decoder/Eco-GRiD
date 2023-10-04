@@ -1,6 +1,6 @@
 # Eco-GRiD: Empowering Clean Energy Trading with Blockchain
 
-**Problem Statement and Solution**
+## Problem Statement and Solution
 
 **Intent:** We aim to create a peer-to-peer blockchain marketplace for buying and selling renewable energy, fostering local energy production and consumption while reducing reliance on centralized power grids.
 
@@ -14,12 +14,12 @@ Within national grids, our solution empowers prosumers, including users, substat
 
 **VeriDoc API Use Case:** Our platform integrates with the VeriDoc API to streamline user authorization and document verification. Users can register and submit documents, generate QR codes for verification, and undergo document verification on the blockchain.
 
-**Team Members:**
+## Team Members:
 - Neeraj Choubisa
 - Rakesh Roushan
 - Sneha Gupta
 
-**Core Features:**
+## Core Features:
 - Cross-Border P2P Trading
 - P2G and G2P Transactions
 - Blockchain Trust
@@ -27,14 +27,15 @@ Within national grids, our solution empowers prosumers, including users, substat
 - Real-time Monitoring
 - Automated Settlements
 
-**How to Get Started:**
+## How to Get Started:
 1. Clone the repository.
 2. Set up the required dependencies.
 3. Explore the codebase, including the VeriDoc API integration.
 4. Run the application locally to see our solution in action.
 
-**Flowchart:**
-<img width="1470" alt="Flowchart" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
+## Flowchart:
+![SIH-2](https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/952ca8ff-f460-4c7e-9bd7-a763c9a768c1)
+
 
 **Screenshots:**
 <img width="1470" alt="Landing Page" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
