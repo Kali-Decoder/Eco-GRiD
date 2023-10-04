@@ -1,10 +1,21 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import React from "react";
+import React, { useState } from "react";
 import { FaIndustry, FaUserTie } from "react-icons/fa";
-
+import { useUserDataContext } from "../context/DataContext";
+import Confetti from "react-confetti";
 const RegisterUser = () => {
+  const [selectedFile, setSelectedFile] = useState("");
+  const { onRegisterUser, confetti } = useUserDataContext();
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
+  };
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
   return (
     <>
+      {confetti && <Confetti width={width} height={height} />}
       <div
         className="form-wrapper 
          min-h-screen
@@ -21,7 +32,7 @@ const RegisterUser = () => {
                [ p-8 md:p-10 lg:p-10 ]
                "
         >
-          <h1 className="mb-6 uppercase  text-violet-600 font-bold [ text-xl md:text-xl lg:text-xl ]">
+          <h1 className="mb-6 uppercase  text-blue-300 font-bold [ text-xl md:text-xl lg:text-xl ]">
             Register client
           </h1>
           <label
@@ -103,14 +114,14 @@ const RegisterUser = () => {
               </label>
             </li>
           </ul>
-          <div class="flex items-center justify-center w-full mt-4">
+          <div className="flex items-center justify-center w-full mt-4">
             <label
               for="dropzone-file"
-              class="flex flex-col items-center justify-center w-full h-34 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-black dark:hover:bg-bray-800 dark:bg-black hover:bg-black dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-black"
+              className="flex flex-col items-center justify-center w-full h-34 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-black dark:hover:bg-bray-800 dark:bg-black hover:bg-black dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-black"
             >
-              <div class="flex flex-col items-center justify-center pt-5 pb-6">
+              <div className="flex flex-col items-center justify-center pt-5 pb-6">
                 <svg
-                  class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                  className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -124,21 +135,37 @@ const RegisterUser = () => {
                     d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
                   />
                 </svg>
-                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                  <span class="font-semibold">Click to upload</span> Doc
+                <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                  <span className="font-semibold">Click to upload</span> Doc
                   Verification
                 </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
+                <p className="text-xs text-gray-500 dark:text-gray-400">
                   PAN Card PDF
                 </p>
               </div>
-              <input id="dropzone-file" type="file" class="hidden" />
+              <input
+                id="dropzone-file"
+                onChange={handleFileChange}
+                type="file"
+                className="hidden"
+              />
             </label>
           </div>
+          {selectedFile && selectedFile.type.startsWith("image/") ? (
+            <img
+              src={URL.createObjectURL(selectedFile)}
+              alt="File Preview"
+              className="mt-3 mb-1"
+              style={{ maxWidth: "50%", maxHeight: "100px" }}
+            />
+          ) : (
+            <p>File preview not available for this file type.</p>
+          )}
           <div className="mt-3">
             <ConnectButton />
           </div>
           <button
+            onClick={()=>onRegisterUser()}
             className="form-input font-bold w-full mt-5 rounded-lg  text-white focus:outline-none
                    [ p-3 md:p-4 lg:p-4 ] 
                    [ transition-colors duration-500 ] 

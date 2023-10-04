@@ -9,7 +9,8 @@ body{
   font-family: 'Open Sans', sans-serif;
   background: black;
   font-size:14px;
-
+  scroll-behavior: smooth;
+  
 }
 
 .navbar{
