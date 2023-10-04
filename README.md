@@ -34,10 +34,10 @@ Within national grids, our solution empowers prosumers, including users, substat
 4. Run the application locally to see our solution in action.
 
 **Flowchart:**
-![Flowchart](https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b)
+<img width="1470" alt="Flowchart" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
 
 **Screenshots:**
-<img width="1470" alt="Screenshot 2023-09-17 at 9 50 48 PM" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
-<img width="1470" alt="Screenshot 2023-09-17 at 9 50 33 PM" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/b6881907-e04e-4b87-8021-e0ad1606b0c8">
+<img width="1470" alt="Landing Page" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
+<img width="1470" alt="Marketplace" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/b6881907-e04e-4b87-8021-e0ad1606b0c8">
 
 Explore the future of clean energy trading with EcoGRiD. Join us on this journey towards a sustainable and eco-friendly energy future.
