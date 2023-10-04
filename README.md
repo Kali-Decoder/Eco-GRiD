@@ -12,12 +12,24 @@ Within national grids, our solution empowers prosumers, including users, substat
 
 **Assumptions:** Our solution relies on several key assumptions, including stakeholder willingness to adopt blockchain technology, data availability for machine learning predictions, regulatory support for decentralized trading, and active prosumer participation. Adequate funding for infrastructure development and ongoing technological advancements are also assumed.
 
-**VeriDoc API Use Case:** Our platform integrates with the VeriDoc API to streamline user authorization and document verification. Users can register and submit documents, generate QR codes for verification, and undergo document verification on the blockchain.
+**VeriDoc API Use Case:** Our platform requires just three routes for user authorization:- 
+
+Submit Document Route (/api/submitdocument)
+Why? :- Users can register by utilizing the Veri-doc API's Submit-Doc functionality for document submission.(Submitting PAN card Document).
+Generation QRCode Route (/api/generateqr)
+	Why? :- Is it necessary to attach a QR code for verification after completing the registration.
+At Last Verification Route (/api/verification)
+	Why?:- For Verification of the user Docs on the chain .
+
+The same process applies when placing buy and sell orders, with the platform automatically generating invoices.
+
+
 
 ## Team Members:
 - Neeraj Choubisa
 - Rakesh Roushan
 - Sneha Gupta
+
 
 ## Core Features:
 - Cross-Border P2P Trading
@@ -33,12 +45,19 @@ Within national grids, our solution empowers prosumers, including users, substat
 3. Explore the codebase, including the VeriDoc API integration.
 4. Run the application locally to see our solution in action.
 
+
 ## Flowchart:
 ![SIH-2](https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/952ca8ff-f460-4c7e-9bd7-a763c9a768c1)
+
 
 
 **Screenshots:**
 <img width="1470" alt="Landing Page" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/1967874f-15f7-4679-bd8b-2b926fae0b9b">
 <img width="1470" alt="Marketplace" src="https://github.com/Kali-Decoder/Eco-GRiD/assets/82640789/b6881907-e04e-4b87-8021-e0ad1606b0c8">
+
+**Team Members:**
+- Neeraj Choubisa
+- Rakesh Roushan
+- Sneha Gupta
 
 Explore the future of clean energy trading with EcoGRiD. Join us on this journey towards a sustainable and eco-friendly energy future.
