@@ -7,6 +7,7 @@ import Explore from "./pages/Explore";
 import SubstationMarketPlace from "./pages/SubstationMarketPlace";
 import Authscreen from "./components/AuthVerification";
 import RegisterUser from "./components/RegisterUser";
+import InvoiceGenerator from "./components/InvoiceGenerator";
 const App = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const App = () => {
         />
         <Route path="/auth" exact element={<Authscreen />} />
         <Route path="/register" exact element={<RegisterUser />} />
+        <Route path="/invoice" exact element={<InvoiceGenerator/>}/>
       </Routes>
     </>
   );

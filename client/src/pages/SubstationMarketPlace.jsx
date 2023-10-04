@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import SubstationCard from "../components/base/SubstationCard";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { useNavigate, useParams } from "react-router-dom";
 import powerstations from "../data/powerstations.json";
 import substations from "../data/substations.json";
+import { useUserDataContext } from "../context/DataContext";
+import {GiRollingEnergy} from "react-icons/gi";
 const SubstationMarketPlace = () => {
   const [connectionTypeDown, setConnectionTypeDown] = useState(false);
   const [distanceBetween, setDistanceBetween] = useState(false);
@@ -15,7 +17,7 @@ const SubstationMarketPlace = () => {
   const [connectionType,setConnectionType] = useState("");
   const [distance,setDistance] = useState(0);
 
-
+  const {GenerateInvoice} = useUserDataContext();
   const toggleDropdown = () => {
     setConnectionTypeDown(!connectionTypeDown);
   };
@@ -96,13 +98,13 @@ const SubstationMarketPlace = () => {
             }`}
           >
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Nikola Tesla
+            1-10 kV AC
             </li>
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Lorem Ipsanum
+              10-20 kV AC
             </li>
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Albert Einstein
+              20-Above kV AC
             </li>
           </ul>
         </div>
@@ -237,19 +239,7 @@ const SubstationMarketPlace = () => {
                     class="peer h-10 w-full rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400"
                   />
                 </div>
-                <div class="group relative w-full md:w-full lg:w-full mb-3">
-                  <label
-                    for="1"
-                    class="block w-full pb-1 text-sm mb-3 font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400"
-                  >
-                    Focus outline
-                  </label>
-                  <input
-                    id="1"
-                    type="text"
-                    class="peer h-10 w-full rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
+                
               </div>
               <div className="bg-black px-4 py-3 text-right">
                 <button
@@ -260,16 +250,176 @@ const SubstationMarketPlace = () => {
                   <i className="fas fa-times"></i> Cancel
                 </button>
                 <button
+                   onClick={GenerateInvoice}
                   type="button"
                   className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"
                 >
-                  <i className="fas fa-plus"></i> Sell
+                  <i className="fas fa-plus"></i> Buy
                 </button>
               </div>
             </div>
           </div>
         </div>
       ) : null}
+
+      <Fragment>
+      <div
+        class="max-w-3xl mx-auto p-6  bg-white rounded shadow-sm my-6"
+        id="invoiceCapture"
+      >
+        <div class="grid items-center">
+          <div>
+          <a
+              href="/"
+              className="flex mt-4 flex-col items-center mb-5 font-bold text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+            >
+              <GiRollingEnergy size={40} color="black" />
+              <span
+                className="mx-auto mt-1 text-blue-600 select-none"
+                style={{ fontSize: "25px" }}
+              >
+                Eco
+                <span className="text-indigo-800">-</span>
+                <span className="text-indigo-600">GRiD</span>
+              </span>
+            </a>
+        
+          </div>
+        </div>
+        <div class="text-left mt-10">
+          <p>Eco-Grid Inc.</p>
+          <p class="font-bold text-gray-800">Bill From :</p>
+          <p class="text-gray-500 text-sm">Solar Power Station A</p>
+          <p class="text-gray-500 text-sm mt-1">Substation B</p>
+          
+        </div>
+        <div class="grid grid-cols-2 items-center mt-8">
+          <div>
+            <p class="font-bold text-gray-800">Bill to :</p>
+            <p class="text-gray-500">
+              Laravel LLC.
+              <br />
+              102, Udaipur , Raj ,India
+            </p>
+            <p class="text-gray-500">info@user.com</p>
+            <p class="font-bold text-gray-800 mt-3">Connection Type : 230V</p>
+          </div>
+
+          <div class="text-right">
+            <p class="">
+              Invoice number:
+              <span class="text-gray-500">INV-2023786123</span>
+            </p>
+            <p>
+              Invoice date: <span class="text-gray-500">04/10/2023</span>
+              <br />
+
+            </p>
+          </div>
+        </div>
+
+        <div class="-mx-4 mt-8 flow-root sm:mx-0">
+          <table class="min-w-full">
+            <colgroup>
+              <col class="w-full sm:w-1/2" />
+              <col class="sm:w-1/6" />
+              <col class="sm:w-1/6" />
+              <col class="sm:w-1/6" />
+            </colgroup>
+            <thead class="border-b border-gray-300 text-gray-900">
+              <tr>
+                <th
+                  scope="col"
+                  class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+                >
+                  Items
+                </th>
+                <th
+                  scope="col"
+                  class="hidden px-3 py-3.5 text-right text-sm font-semibold text-gray-900 sm:table-cell"
+                >
+                  Quantity
+                </th>
+                <th
+                  scope="col"
+                  class="hidden px-3 py-3.5 text-right text-sm font-semibold text-gray-900 sm:table-cell"
+                >
+                  Price
+                </th>
+                <th
+                  scope="col"
+                  class="py-3.5 pl-3 pr-4 text-right text-sm font-semibold text-gray-900 sm:pr-0"
+                >
+                  Amount
+                </th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200">
+                <td class="max-w-0 py-5 pl-4 pr-3 text-sm sm:pl-0">
+                  <div class="font-medium text-gray-900">
+                    E-Trading Platform
+                  </div>
+                  <div class="mt-1 truncate text-gray-500">
+                    Energy Trade Information.
+                  </div>
+                </td>
+                <td class="hidden px-3 py-5 text-right text-sm text-gray-500 sm:table-cell">
+                500.0
+                </td>
+                <td class="hidden px-3 py-5 text-right text-sm text-gray-500 sm:table-cell">
+                ₹6
+                </td>
+                <td class="py-5 pl-3 pr-4 text-right text-sm text-gray-500 sm:pr-0">
+                ₹3000.00
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+             
+              <tr>
+                <th
+                  scope="row"
+                  colspan="3"
+                  class="hidden pl-4 pr-3 pt-4 text-right text-sm font-normal text-gray-500 sm:table-cell sm:pl-0"
+                >
+                  Total Tx Charge
+                </th>
+                <th
+                  scope="row"
+                  class="pl-6 pr-3 pt-4 text-left text-sm font-normal text-gray-500 sm:hidden"
+                >
+                  Tax
+                </th>
+                <td class="pl-3 pr-6 pt-4 text-right text-sm text-gray-500 sm:pr-0">
+                ₹125
+                </td>
+              </tr>
+              
+              <tr>
+                <th
+                  scope="row"
+                  colspan="3"
+                  class="hidden pl-4 pr-3 pt-4 text-right text-sm font-semibold text-gray-900 sm:table-cell sm:pl-0"
+                >
+                  Total
+                </th>
+                <th
+                  scope="row"
+                  class="pl-6 pr-3 pt-4 text-left text-sm font-semibold text-gray-900 sm:hidden"
+                >
+                  Total
+                </th>
+                <td class="pl-3 pr-4 pt-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">
+                ₹3125.00
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      </Fragment>
     </>
   );
 };

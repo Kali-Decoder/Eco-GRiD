@@ -175,7 +175,7 @@ const LandingPage = () => {
             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
               Boost Productivity
             </h2>
-            <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+            <p className="pt-4 pb-8 m-0 leading-7 text-white border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
               Achieving complete decentralization, P2P trading, transparency,
               and optimal energy use fosters sustainability and self-reliance in
               our energy system.
@@ -216,28 +216,30 @@ const LandingPage = () => {
             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
               Features Provides
             </h2>
-            <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+            <p className="pt-4 pb-8 m-0 leading-7 text-white border-0 border-gray-300 sm:pr-10 lg:text-lg">
               Save time and money with our revolutionary services. We are the
               leaders in the industry.
             </p>
             <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
-              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
                 <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Automated task management workflow
+                Prosumer Empowerment
+
               </li>
-              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
                 <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Detailed analytics for your data
+                Real-time Monitoring
+
               </li>
-              <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+              <li className="box-border relative py-1 pl-0 text-left text-white border-solid">
                 <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full">
                   <span className="text-sm font-bold">✓</span>
                 </span>{" "}
-                Some awesome integrations
+                Automated Settlements
               </li>
             </ul>
           </div>
@@ -252,17 +254,16 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="py-20  bg-black container mx-auto border">
+      <section className="py-20  bg-black container mx-auto">
         <div className="container items-center max-w-6xl px-8 mx-5">
           <div className="flex flex-wrap items-center -mx-3">
             <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
               <div className="w-full lg:max-w-md">
                 <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">
-                  Jam-packed with all the tools you need to succeed!
+                  Decentralized Renewable Energy Trading Marketplace!
                 </h2>
                 <p className="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">
-                  It's never been easier to build a business of your own. Our
-                  tools will help you with the following:
+                  
                 </p>
                 <ul>
                   <li className="flex items-center py-2 space-x-4 xl:py-3">
@@ -280,8 +281,9 @@ const LandingPage = () => {
                         d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
                       ></path>
                     </svg>
-                    <span className="font-medium text-gray-500">
-                      Faster Processing and Delivery
+                    <span className="font-medium text-white">
+                    Cross-Border P2P Trading: Facilitates renewable energy exchange between different nations' grids.
+
                     </span>
                   </li>
                   <li className="flex items-center py-2 space-x-4 xl:py-3">
@@ -299,8 +301,9 @@ const LandingPage = () => {
                         d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
                       ></path>
                     </svg>
-                    <span className="font-medium text-gray-500">
-                      Out of the Box Tracking and Monitoring
+                    <span className="font-medium text-white">
+                    P2G and G2P Transactions: Enables prosumers to sell excess energy to the grid and vice versa.
+
                     </span>
                   </li>
                   <li className="flex items-center py-2 space-x-4 xl:py-3">
@@ -318,8 +321,8 @@ const LandingPage = () => {
                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                       ></path>
                     </svg>
-                    <span className="font-medium text-gray-500">
-                      100% Protection and Security for Your App
+                    <span className="font-medium text-white">
+                  Blockchain Trust: Utilizes blockchain for secure, transparent, and immutable transaction records.
                     </span>
                   </li>
                 </ul>
@@ -602,7 +605,7 @@ const LandingPage = () => {
             </a>
           </div>
           <p className="mt-8 text-base leading-6 text-center text-gray-400">
-            © 2021 SomeCompany, Inc. All rights reserved.
+            © 2023 Eco-GRiD, Inc. All rights reserved.
           </p>
         </div>
       </section>

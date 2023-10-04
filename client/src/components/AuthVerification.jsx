@@ -2,8 +2,10 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import React, { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import { useAccount } from "wagmi";
+import { useUserDataContext } from "../context/DataContext";
 
 const Authscreen = () => {
+  const {onLogin ,confetti} = useUserDataContext();
   const width = window.innerWidth;
   const height = window.innerHeight;
   const [walletAddress, setWalletAddress] = useState("");
@@ -12,13 +14,12 @@ const Authscreen = () => {
     const pastedText = event.clipboardData.getData("Text");
     setWalletAddress(pastedText);
   };
-  const checking = async () => {
-    // await checkVerification(walletAddress);
-  };
+
+  
 
   return (
     <>
-      {/* {confetti && <Confetti width={width} height={height} />} */}
+      {confetti && <Confetti width={width} height={height} />}
       <div
         className="form-wrapper 
          min-h-screen
@@ -36,8 +37,8 @@ const Authscreen = () => {
                [ p-8 md:p-10 lg:p-10 ]
                border"
         >
-          <h1 className="mb-6 uppercase text-yellow-600 font-bold [ text-xl md:text-xl lg:text-xl ]">
-             On-Board
+          <h1 className="mb-6 uppercase text-yellow-300 font-bold [ text-xl md:text-xl lg:text-xl ]">
+             Login 
           </h1>
 
           {true ? (
@@ -63,15 +64,34 @@ const Authscreen = () => {
                   onPaste={handlePaste}
                 />
               </label>
+              <label
+                for="Unique-ID"
+                className="form-label relative block mb-4 text-black/50 focus-within:text-[#333]"
+              >
+                <input
+                  className="form-input 
+              
+              border 
+                    block w-full rounded-lg leading-none focus:outline-none placeholder-white/50 
+                    [ transition-colors duration-200 ] 
+                    [ py-3 pr-3 md:py-4 md:pr-4 lg:py-4 lg:pr-4 pl-12 ] 
+                    [ bg-black/20 focus:bg-black/25 ] 
+                    [ text-[#fff] focus:text-white ]"
+                  type="text"
+                  
+                  placeholder="Paste your Unique-ID Document"
+
+                />
+              </label>
               <>
                 <button
-                  onClick={checking}
+                  onClick={onLogin}
                   className="form-input w-full mt-4 rounded-lg  text-white focus:outline-none
                    [ p-3 md:p-4 lg:p-4 ] 
                    [ transition-colors duration-500 ] 
                    [ bg-blue-800 hover:bg-blue-700 ] cursor-pointer"
                 >
-                  Verify
+                  Login
                 </button>
               </>
             </>
