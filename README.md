@@ -20,7 +20,9 @@ Our solution relies on some key assumptions, including stakeholder readiness to 
 Our platform leverages the VeriDoc API for user authorization, document submission, QR code generation, and document verification on the blockchain.
 
 **Submit Document Route (/api/submitdocument)** :- Users can register by utilizing the Veri-doc API's Submit-Doc functionality   for document submission.(Submitting PAN card Document).
-**Generation QRCode Route (/api/generateqr)** :- Is it necessary to attach a QR code for verification after completing the     registration.
+
+**Generation QRCode Route (/api/generateqr)** :- Is it necessary to attach a QR code for verification after completing the registration?
+
 **Verification Route (/api/verification)** :- For Verification of the user Docs on the chain .
 
 ## Key Features:
