@@ -5,13 +5,10 @@ import { BigNumber } from "ethers";
 import { toast } from "react-toastify";
 import { usePublicClient, useAccount, useNetwork } from "wagmi";
 import { useEthersSigner } from "../web3-services/signer.ts";
-<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import invoice from "../data/invoice.js";
-=======
->>>>>>> b35584c10a5a37a05c3489394c21a154684df4de
 
 const UserDataContext = createContext();
 
@@ -24,15 +21,11 @@ export const UserContextProvider = ({ children }) => {
   const { address, isDisconnected } = useAccount();
   const signer = useEthersSigner(activeChain);
   const [confetti, setConfetti] = useState(false);
-<<<<<<< HEAD
   const navigate = useNavigate();
-=======
->>>>>>> b35584c10a5a37a05c3489394c21a154684df4de
   async function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-<<<<<<< HEAD
   const onRegisterUser=async()=>{
     setConfetti(true);
     await sleep(3* 1000);
@@ -45,13 +38,6 @@ export const UserContextProvider = ({ children }) => {
     await sleep(3 * 1000);
     setConfetti(false);
     navigate("/marketplace");
-=======
-  const onRegisterUser=()=>{
-    setConfetti(true);
-    sleep(500 * 1000);
-    
-    setConfetti(false);
->>>>>>> b35584c10a5a37a05c3489394c21a154684df4de
   }
 
 
@@ -60,7 +46,6 @@ export const UserContextProvider = ({ children }) => {
   }, [signer, address]);
 
 
-<<<<<<< HEAD
   function addQrCodeToPdf(qrCodeDataUrl, pdf) {
     const qrImg = new Image();
     qrImg.src = qrCodeDataUrl;
@@ -130,19 +115,13 @@ export const UserContextProvider = ({ children }) => {
       });
     });
   }
-=======
->>>>>>> b35584c10a5a37a05c3489394c21a154684df4de
   return (
     <UserDataContext.Provider
       value={{
         onRegisterUser,
-<<<<<<< HEAD
         confetti,
         onLogin,
         GenerateInvoice
-=======
-        confetti
->>>>>>> b35584c10a5a37a05c3489394c21a154684df4de
       }}
     >
       {children}
