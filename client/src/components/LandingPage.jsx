@@ -3,6 +3,9 @@ import { TypeAnimation } from "react-type-animation";
 import { FaSuperpowers } from "react-icons/fa";
 import { GiRollingEnergy } from "react-icons/gi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import {FiSun} from "react-icons/fi";
+import {PiGitDiffLight} from "react-icons/pi";
+import {TbBusinessplan} from "react-icons/tb";
 import axios from "axios";
 const LandingPage = () => {
   // const [imageUrl,setImageUrl] = useState("");
@@ -47,23 +50,18 @@ const LandingPage = () => {
                 Home
               </a>
               <a
-                href="#_"
+                href="#features"
                 className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
               >
                 Features
               </a>
               <a
-                href="#_"
+                href="#usecases"
                 className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
               >
-                Pricing
+                Use-Cases
               </a>
-              <a
-                href="#_"
-                className="mr-1 text-2xl font-medium leading-6 text-gray-600 hover:text-white"
-              >
-                Blog
-              </a>
+              
             </nav>
             <a
               href="/marketplace"
@@ -123,31 +121,7 @@ const LandingPage = () => {
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
                   <ConnectButton />
-                  {/* <a
-                    href="#_"
-                    className="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto"
-                  >
-                    Collect Energy
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 ml-1"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a> */}
-                  {/* <a
-                    href="#_"
-                    className="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
-                  >
-                    Learn More
-                  </a> */}
+                    
                 </div>
               </div>
             </div>
@@ -160,7 +134,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="w-full bg-black">
+      <section className="w-full bg-black" id="features">
         <div className="box-border flex flex-col items-center content-center  mx-auto leading-6 text-black  md:flex-row max-w-7xl mb-10">
           <div className="box-border relative w-full max-w-md mt-5 mb-4  text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
             <img
@@ -338,61 +312,50 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <div className="section2 mx-auto bg-black flex justify-center items-center">
+      <div className="section2 mx-auto bg-black flex justify-center items-center" id="usecases">
         <div className="features flex flex-wrap">
-          <div className="tile access">
-            <img
-              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-access-anywhere.svg"
-              alt="access icon"
-            />
-            <h3 className="mt-4 font-bold text-yellow-300 uppercase">
-              Access your files, anywhere
-            </h3>
-            <p className="mt-4">
-              The ability to use a smartphone, tablet, or computer to access
-              your account means your files follow you everywhere.
-            </p>
-          </div>
-          <div className="tile security">
-            <img
-              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-security.svg"
-              alt="security icon"
-            />
-            <h3 className="mt-4 font-bold uppercase text-yellow-300">
-              Security you can trust
-            </h3>
-
-            <p className="mt-4">
-              2-factor authentication and user-controlled encryption are just a
-              couple of the security features we allow to help secure your
-              files.
-            </p>
-          </div>
+          
           <div className="tile real-time">
             <img
               src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-collaboration.svg"
               alt="clock icon"
             />
             <h3 className="mt-4 font-bold uppercase text-yellow-300">
-              Real-time collaboration
+            Prosumer-to-Grid and Grid-to-Prosumer Trading (P2G and G2P)
             </h3>
             <p className="mt-4">
-              Securely share files and folders with friends, family, and
-              colleagues for live collaboration. No email attachments required.
+            Allowing prosumers, such as households with solar panels etc to sell excess energy generated from renewable sources (P2G) to the central grid, contributing to clean energy generation. 
+            </p>
+          </div>
+          <div className="tile access">
+            <FiSun size={100} color="teal" />
+            <h3 className="mt-4 font-bold text-yellow-300 uppercase">
+            One Sun One World One Grid
+            </h3>
+            <p className="mt-4">
+            Promoting The One Sun One World One Grid (OSOWOG), a transnational electricity grid supplying power all over the world. The idea initiated by  the International Solar Alliance (ISA) in 2018.
+            </p>
+          </div>
+          
+          <div className="tile security">
+           <PiGitDiffLight size={100} color="teal" />
+            <h3 className="mt-4 font-bold uppercase text-yellow-300">
+            Cross-Border Energy Trading (P2P)
+            </h3>
+
+            <p className="mt-4">
+            Promoting
+neighboring countries with interconnected energy grids to engage in cross-border energy trading.
+
             </p>
           </div>
           <div className="tile storage">
-            <img
-              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-any-file.svg"
-              alt="storage icon"
-            />
+            <TbBusinessplan size={100} color="teal" />
             <h3 className="mt-4 font-bold uppercase text-yellow-300">
-              Store any type of file
+            Unlocking business potential
             </h3>
             <p className="mt-4">
-              Whether you're sharing holidays, photos, or work documents, Fylo
-              as you covered, allowing for all file types to be securely stored
-              and shared.
+         Empowering producers to profit from one-time investments, such as solar, through peer-to-peer transactions.
             </p>
           </div>
         </div>
