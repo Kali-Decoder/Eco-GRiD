@@ -22,7 +22,7 @@ const SubstationCard = ({ item, setIsOpen }) => {
         <div className="aspect-square overflow-hidden">
           <img
             className="h-full w-full object-cover transition-all duration-300 group-hover:scale-125"
-            src="/images/neZnfwBHi0f-4TivjA6BS.png"
+            src="https://media.istockphoto.com/id/609700424/vector/electrical-substation-the-high-voltage-transformer-and-switch-black-white.jpg?s=612x612&w=0&k=20&c=WHySJZYTqWcTgFZ6KCyjMhtb2aWCuFJA1pbJrh8DkAQ="
             alt=""
           />
         </div>

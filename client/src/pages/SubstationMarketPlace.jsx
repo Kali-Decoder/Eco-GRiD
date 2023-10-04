@@ -96,13 +96,13 @@ const SubstationMarketPlace = () => {
             }`}
           >
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Nikola Tesla
+            1-10 kV AC
             </li>
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Lorem Ipsanum
+              10-20 kV AC
             </li>
             <li className="cursor-pointer px-3 py-2 text-sm text-white hover:bg-blue-500 hover:text-white">
-              Albert Einstein
+              20-Above kV AC
             </li>
           </ul>
         </div>
