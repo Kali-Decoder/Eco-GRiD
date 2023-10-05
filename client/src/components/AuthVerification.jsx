@@ -65,7 +65,7 @@ const Authscreen = () => {
                 />
               </label>
               <label
-                for="Unique-ID"
+                for="Phone Number"
                 className="form-label relative block mb-4 text-black/50 focus-within:text-[#333]"
               >
                 <input
@@ -79,7 +79,7 @@ const Authscreen = () => {
                     [ text-[#fff] focus:text-white ]"
                   type="text"
                   
-                  placeholder="Paste your Unique-ID Document"
+                  placeholder="Paste your Pancard Number"
 
                 />
               </label>
