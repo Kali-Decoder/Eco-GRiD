@@ -317,7 +317,7 @@ const LandingPage = () => {
           
           <div className="tile real-time">
             <img
-              src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-collaboration.svg"
+              src=""
               alt="clock icon"
             />
             <h3 className="mt-4 font-bold uppercase text-yellow-300">
